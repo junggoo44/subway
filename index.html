@@ -1,0 +1,3282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SUBWAY</title>
+    <link rel="stylesheet" href="css/subway.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/subway.js"></script>
+    <script src="js/subway_func.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="greenline"></div>
+
+    <header>
+        <div onclick="main_func()"></div>
+        <div class="login">
+            <div id="sub sub11" onclick="func(11)">로그인</div>
+            <div id="sub sub12" onclick="func(12)">회원가입</div>
+        </div>
+    </header>
+
+    <nav>
+        <div>메뉴소개</div>
+        <div>이용방법</div>
+        <div>새소식</div>
+        <div>써브웨이</div>
+        <ul class="topdown">
+            <li>
+                <p id="sub sub1" onclick="func(1)">샌드위치</p>
+                <p id="sub sub2" onclick="func(2)">랩 . 기타</p>
+                <p id="sub sub3" onclick="func(3)">찹샐러드</p>
+                <p id="sub sub4" onclick="func(4)">아침메뉴</p>
+            </li>
+            <li>
+                <p id="sub sub5" onclick="func(5)">써브웨이 이용방법</p>
+                <p id="sub sub6" onclick="func(6)">신선한 재료 소개</p>
+            </li>
+            <li>
+                <p id="sub sub7" onclick="func(7)">이벤트 . 프로모션</p>
+                <p id="sub sub8" onclick="func(8)">뉴스 . 공지사항</p>
+            </li>
+            <li>
+                <p id="sub sub9" onclick="func(9)">써브웨이 역사</p>
+                <p id="sub sub10" onclick="func(10)">써브웨이 약속</p>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="none none1"></div>
+    <div class="none none2"></div>
+
+    
+
+    <section>
+        <div class="main_big" id="main_1">
+            <div class="big_img">
+                <ul class='big_img_3'>
+                    <li class="main_big1"><img src="img/bg1.png" alt=""></li>
+                    <li class="main_big2"><img src="img/bg2.png" alt=""></li>
+                    <li class="main_big3"><img src="img/bg3.jpg" alt=""></li>
+                </ul>
+            </div>
+            <ul class="big_img_btn">
+                <li class="big_img_btn1"></li>
+                <li class="big_img_btn2"></li>
+                <li class="big_img_btn3"></li>
+            </ul>
+        </div>
+        <div class="subwaymenu"  id="main_2">
+            <ul class="menu_text">
+                <li>Subway's Menu</li>
+                <li id="main2_1" class="main2">클래식</li>
+                <li>ㅣ</li>
+                <li id="main2_2" class="main2">프레쉬&라이트</li>
+                <li>ㅣ</li>
+                <li id="main2_3" class="main2">프리미엄</li>
+                <li>ㅣ</li>
+                <li id="main2_4" class="main2">아침메뉴</li>
+            </ul>
+
+            <!-- 클래식 메뉴이미지 -->
+            <div class="menu_img menu_img1" id="menu1">
+                <ul class="on_cli1">
+                    <li>
+                        <img src="img/img_1.png"
+                        onmouseover="this.src='img/img_1_1.png'"
+                        onmouseout="this.src='img/img_1.png'">
+                    </li>
+                    <li>
+                        <p>에그마요</p>
+                        <p>부드러운 달걀과 고소한 마요네즈가 만나<br>더 부드러운 스테디셀러</p>
+                    </li>
+                </ul>
+                <ul class="on_cli1">
+                    <li>
+                        <img src="img/img_2.png"
+                        onmouseover="this.src='img/img_2_1.png'"
+                        onmouseout="this.src='img/img_2.png'">
+                    </li>
+                    <li>
+                        <p>이탈리안 비엠티</p>
+                        <p>페퍼로니, 살라미 그리고 햄이 만들어내는 최상의<br>조화! 전세계가 사랑하는 써브웨이의 베스트셀러!<br>Biggest Meatiest Tastiest, its' B.M.T!</p>
+                    </li>
+                </ul>
+                <ul class="on_cli1">
+                    <li>
+                        <img src="img/img_3.png"
+                        onmouseover="this.src='img/img_3_1.png'"
+                        onmouseout="this.src='img/img_3.png'">
+                    </li>
+                    <li>
+                        <p>비엘티</p>
+                        <p>오리지널 아메리칸 스타일 베이컨의<br>풍미와 바삭함 그대로</p>
+                    </li>
+                </ul>
+                <ul class="on_cli1">
+                    <li>
+                        <img src="img/img_4.jpg"
+                        onmouseover="this.src='img/img_4_1.png'"
+                        onmouseout="this.src='img/img_4.jpg'">
+                    </li>
+                    <li>
+                        <p>미트볼</p>
+                        <p>이탈리안 스타일 비프 미트볼에<br>써브웨이만의 풍부한 토마토 향이 살아있는<br>마리나라소스를 듬뿍</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 프레쉬&라이트 메뉴이미지 -->
+            <div class="menu_img menu_img2" id="menu2">
+                <ul class="on_cli2">
+                    <li>
+                        <img src="img/img_5.png"
+                        onmouseover="this.src='img/img_5_1.png'"
+                        onmouseout="this.src='img/img_5.png'">
+                    </li>
+                    <li>
+                        <p>로티세리 바비큐 치킨</p>
+                        <p>촉촉한 바비큐 치킨의 풍미가득.<br>손으로 찢어 더욱 부드러운 치킨의 혁명</p>
+                    </li>
+                </ul>
+                <ul class="on_cli2">
+                    <li>
+                        <img src="img/img_6.jpg"
+                        onmouseover="this.src='img/img_6_1.png'"
+                        onmouseout="this.src='img/img_6.jpg'">
+                    </li>
+                    <li>
+                        <p>로스트 치킨</p>
+                        <p>오븐에 구워 담백한 저칼로리<br>닭가슴살의 건강한 풍미</p>
+                    </li>
+                </ul>
+                <ul class="on_cli2">
+                    <li>
+                        <img src="img/img_7.jpg"
+                        onmouseover="this.src='img/img_7_1.png'"
+                        onmouseout="this.src='img/img_7.jpg'">
+                    </li>
+                    <li>
+                        <p>써브웨이 클럽</p>
+                        <p>명실공히 시그니처 써브!<br>터키, 햄, 베이컨의 완벽한 앙상블</p>
+                    </li>
+                </ul>
+                <ul class="on_cli2">
+                    <li>
+                        <img src="img/img_8.png"
+                        onmouseover="this.src='img/img_8_1.png'"
+                        onmouseout="this.src='img/img_8.png'">
+                    </li>
+                    <li>
+                        <p>터키</p>
+                        <p>280kcal로 슬림하게 즐기는<br>오리지날 터키 샌드위치</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 프리미엄 메뉴이미지 -->
+            <div class="menu_img menu_img3" id="menu3">
+                <ul class="on_cli3">
+                    <li>
+                        <img src="img/img_9.png"
+                        onmouseover="this.src='img/img_9_1.png'"
+                        onmouseout="this.src='img/img_9.png'">
+                    </li>
+                    <li>
+                        <p>스파이시 쉬림프</p>
+                        <p>빨간맛에 빠진 쉬림프!<br>이국적인 매콤한이 더해진<br>시즌 한정 스파이시 쉬림프</p>
+                    </li>
+                </ul>
+                <ul class="on_cli3">
+                    <li>
+                        <img src="img/img_10.png"
+                        onmouseover="this.src='img/img_10_1.png'"
+                        onmouseout="this.src='img/img_10.png'">
+                    </li>
+                    <li>
+                        <p>스파이시 쉬림프 아보카도</p>
+                        <p>매콤한 쉬림프와 부~드러운 아보카도가 만나,<br>이국적인 풍미 업!</p>
+                    </li>
+                </ul>
+                <ul class="on_cli3">
+                    <li>
+                        <img src="img/img_11.png"
+                        onmouseover="this.src='img/img_11_1.png'"
+                        onmouseout="this.src='img/img_11.png'">
+                    </li>
+                    <li>
+                        <p>쉬림프</p>
+                        <p>탱글한 식감이 그대로 살아있는 통새우가<br>5마리 들어가 한 입 베어 먹을 때 마다<br>진짜 새우의 풍미가 가득</p>
+                    </li>
+                </ul>
+                <ul class="on_cli3">
+                    <li>
+                        <img src="img/img_12.png"
+                        onmouseover="this.src='img/img_12_1.png'"
+                        onmouseout="this.src='img/img_12.png'">
+                    </li>
+                    <li>
+                        <p>풀드 포크 바비큐</p>
+                        <p>훈연한 미국 정통 스타일의 리얼 바비큐<br>풀드포크가 들어간 샌드위치</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 아침메뉴 메뉴이미지 -->
+            <div class="menu_img menu_img4" id="menu4">
+                <ul class="on_cli4">
+                    <li>
+                        <img src="img/img_13.png"
+                        onmouseover="this.src='img/img_13_1.png'"
+                        onmouseout="this.src='img/img_13.png'">
+                    </li>
+                    <li>
+                        <p>햄, 에그&치즈</p>
+                        <p>푹신한 오믈렛과 햄의 가장 클래식한 조화</p>
+                    </li>
+                </ul>
+                <ul class="on_cli4">
+                    <li>
+                        <img src="img/img_14.png"
+                        onmouseover="this.src='img/img_14_1.png'"
+                        onmouseout="this.src='img/img_14.png'">
+                    </li>
+                    <li>
+                        <p>웨스턴, 에그&치즈</p>
+                        <p>토마토, 피망, 양파 세가지 야채가 더해져<br>더욱 신선한 하루 시작</p>
+                    </li>
+                </ul>
+                <ul class="on_cli4">
+                    <li>
+                        <img src="img/img_15.png"
+                        onmouseover="this.src='img/img_15_1.png'"
+                        onmouseout="this.src='img/img_15.png'">
+                    </li>
+                    <li>
+                        <p>베이컨, 에그&치즈</p>
+                        <p>오리지널 아메리칸 스타일 베이컨으로<br>더욱 풍성한 아침 식사</p>
+                    </li>
+                </ul>
+                <ul class="on_cli4">
+                    <li>
+                        <img src="img/img_16.png"
+                        onmouseover="this.src='img/img_16_1.png'"
+                        onmouseout="this.src='img/img_16.png'">
+                    </li>
+                    <li>
+                        <p>스테이크, 에그&치즈</p>
+                        <p>육즙 가득 비프 스테이크로<br>든든한 아침 식사</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 메인화면_하단 블록(서브)메뉴 -->
+        <div class="submenu" id="main_3">
+            <div>
+                <ul class="submenu1">
+                    <li>써브웨이를</li>
+                    <li>제대로 즐기는 방법!</li>
+                    <li>이용방법</li>
+                </ul>
+                <ul class="submenu2">
+                    <li>50년 역사를 가진</li>
+                    <li>No.1 프랜차이즈의 성장기</li>
+                    <li>써브웨이 역사</li>
+                </ul>
+                <ul class="submenu3">
+                    <li>What's New</li>
+                    <li>
+                        <p>써브웨이의 다양한 소식을</p>
+                        <p>빠르게 전달해드립니다.</p>
+                    </li>
+                    <li class="at0_btn at0_btn1">써브웨이와 함께하는 tvN '간떨어지는동거'</li>
+                    <li class="at0_btn at0_btn2">써브웨이 2021년 5월 가격 인상 안내</li>
+                    <li class="at0_btn at0_btn3">써브웨이 모바일 상품권 이용 안내의 건</li>
+                    <li class="at0_btn4">더보기</li>
+                </ul>
+                <ul class="submenu4"></ul>
+            </div>
+        </div>
+        <div class="top">Top</div>
+
+        <article class="at at1" id="ati1">
+            <div class="at1_bigimg">
+                <div>
+                    <div>
+                        <div id="at1_ani1"><img src="img/menu_img.jpg"></div>
+                    </div>
+                    <p>Sandwich</p>
+                    <p>전세계 넘버원 브랜드 Subway<br>50년 전통의 세계 최고의 샌드위치를 맛보세요!</p>
+                </div>
+                <div class="at1_submenu1">
+                    <ul>
+                        <li id="at1_bt1_1">
+                            <p>샌드위치</p> 
+                            <p>ㅣ</p> 
+                        </li>
+                        <li id="at1_bt1_2">
+                            <p>랩 . 기타</p> 
+                            <p>ㅣ</p> 
+                        </li>
+                        <li id="at1_bt1_3">
+                            <p>찹샐러드</p> 
+                            <p>ㅣ</p> 
+                        </li>
+                        <li id="at1_bt1_4">
+                            <p>아침메뉴</p> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at1_submenu2">
+                <div>
+                    <ul>
+                        <li id="at1_bt2_1" class="at1_bt2">클래식</li>
+                        <li>ㅣ</li>
+                        <li id="at1_bt2_2" class="at1_bt2">프레쉬&라이트</li>
+                        <li>ㅣ</li>
+                        <li id="at1_bt2_3" class="at1_bt2">프리미엄</li>
+                    </ul>
+                </div>
+                <div class="at1_box">
+                    <div id="ati1_box1" class="ati1_box">
+                        <ul>
+                            <li>
+                                <img src="img/img_1.png">
+                            </li>
+                            <li>
+                                <p>에그마요</p>
+                                <p>Egg Mayo</p>
+                                <p>480 kcal</p>
+                            </li>
+                            <li class="at1_hover">
+                                <p>에그마요</p>
+                                <p>Egg Mayo</p>
+                                <p>부드러운 달걀과 고소한 마요네즈가 만나<br>더 부드러운 스테디셀러</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img/img_2.png">
+                            </li>
+                            <li>
+                                <p>이탈리안 비엠티</p>
+                                <p>Italian B.M.T.</p>
+                                <p>410 kcal</p>
+                            </li>
+                            <li class="at1_hover">
+                                <p>이탈리안 비엠티</p>
+                                <p>Italian B.M.T.</p>
+                                <p>페퍼로니, 살라미 그리고 햄이 만들어내는 최상의<br>조화! 전세계가 사랑하는 써브웨이의 베스트셀러!<br>Biggest Meatiest Tastiest, its' B.M.T!</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img/img_3.png">
+                            </li>
+                            <li>
+                                <p>비엘티</p>
+                                <p>B.L.T</p>
+                                <p>380 kcal</p>
+                            </li>
+                            <li class="at1_hover">
+                                <p>비엘티</p>
+                                <p>B.L.T</p>
+                                <p>오리지널 아메리칸 스타일 베이컨의<br>풍미와 바삭함 그대로</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img/img_4.jpg">
+                            </li>
+                            <li>
+                                <p>미트볼</p>
+                                <p>Meatball</p>
+                                <p>480 kcal</p>
+                            </li>
+                            <li class="at1_hover">
+                                <p>미트볼</p>
+                                <p>Meatball</p>
+                                <p>이탈리안 스타일 비프 미트볼에<br>써브웨이만의 풍부한 토마토 향이 살아있는<br>마리나라소스를 듬뿍</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img/img_17.jpg">
+                            </li>
+                            <li>
+                                <p>햄</p>
+                                <p>Ham</p>
+                                <p>290 kcal</p>
+                            </li>
+                            <li class="at1_hover">
+                                <p>햄</p>
+                                <p>Ham</p>
+                                <p>기본 중에 기본! 풍부한 햄이 만들어내는<br>입 안 가득 넘치는 맛의 향연</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img/img_18.jpg">
+                            </li>
+                            <li>
+                                <p>참치</p>
+                                <p>Tuna</p>
+                                <p>480 kcal</p>
+                            </li>
+                            <li class="at1_hover">
+                                <p>참치</p>
+                                <p>Tuna</p>
+                                <p>남녀노소 누구나 좋아하는 담백한 참치와<br>고소한 마요네즈의 완벽한 조화</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="ati1_box2" class="ati1_box">
+                        <ul>
+                            <li>
+                                <img src="img/img_5.png">
+                            </li>
+                            <li>
+                                <p>로티세리 바비큐 치킨</p>
+                                <p>Rotisserie Barbecue Chicken</p>
+                                <p>350 kcal</p>
+                            </li>
+                            <li class="at1_hover">
+                                <p>로티세리 바비큐 치킨</p>
+                                <p>Rotisserie Barbecue Chicken</p>
+                                <p>촉촉한 바비큐 치킨의 풍미가득.<br>손으로 찢어 더욱 부드러운 치킨의 혁명</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img/img_6.jpg">
+                            </li>
+                            <li>
+                                <p>로스트 치킨</p>
+                                <p>Roasted Chicken</p>
+                                <p>320 kcal</p>
+                            </li>
+                            <li class="at1_hover">
+                                <p>로스트 치킨</p>
+                                <p>Roasted Chicken</p>
+                                <p>오븐에 구워 담백한 저칼로리 닭가슴살의<br>건강한 풍미</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img/img_7.jpg">
+                            </li>
+                            <li>
+                                <p>써브웨이 클럽</p>
+                                <p>Subway Club</p>
+                                <p>293 kcal</p>
+                            </li>
+                            <li class="at1_hover">
+                                <p>써브웨이 클럽</p>
+                                <p>Subway Club</p>
+                                <p>명실공히 시그니처 써브!<br>터키, 햄, 베이컨의 완벽한 앙상블</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img/img_8.png">
+                            </li>
+                            <li>
+                                <p>터키</p>
+                                <p>Turkey</p>
+                                <p>280 kcal</p>
+                            </li>
+                            <li class="at1_hover">
+                                <p>터키</p>
+                                <p>Turkey</p>
+                                <p>280kcal로 슬림하게 즐기는<br>오리지날 터키 샌드위치</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img/img_19.jpg">
+                            </li>
+                            <li>
+                                <p>베지</p>
+                                <p>Veggie Delite</p>
+                                <p>230 kcal</p>
+                            </li>
+                            <li class="at1_hover">
+                                <p>베지</p>
+                                <p>Veggie Delite</p>
+                                <p>갓 구운 빵과 신선한 7가지 야채로 즐기는<br>깔끔한 한끼</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="ati1_box3" class="ati1_box">
+                        <ul>
+                            <li>
+                                <img src="img/img_9.png">
+                            </li>
+                            <li>
+                                <p>스파이시 쉬림프</p>
+                                <p>Spicy Shrimp</p>
+                                <p>233 kcal</p>
+                            </li>
+                            <li class="at1_hover">
+                                <p>스파이시 쉬림프</p>
+                                <p>Spicy Shrimp</p>
+                                <p>빨간맛에 빠진 쉬림프! 이국적인 매콤함이<br>더해진 시즌 한정 스파이시 쉬림프!</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img/img_10.png">
+                            </li>
+                            <li>
+                                <p>스파이시 쉬림프 아보카도</p>
+                                <p>Spicy Shrimp Avocado</p>
+                                <p>289 kcal</p>
+                            </li>
+                            <li class="at1_hover">
+                                <p>스파이시 쉬림프 아보카도</p>
+                                <p>Spicy Shrimp Avocado</p>
+                                <p>매콤한 쉬림프와 부~드러운 아보카도가 만나,<br>이국적인 풍미 업!</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img/img_11.png">
+                            </li>
+                            <li>
+                                <p>쉬림프</p>
+                                <p>Shrimp</p>
+                                <p>229 kcal</p>
+                            </li>
+                            <li class="at1_hover">
+                                <p>쉬림프</p>
+                                <p>Shrimp</p>
+                                <p>탱글한 식감이 그대로 살아있는 통새우가<br>5마리 들어가 한 입 베어 먹을 때 마다<br>진짜 새우의 풍미가 가득</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img/img_12.png">
+                            </li>
+                            <li>
+                                <p>풀드 포크 바비큐</p>
+                                <p>Pulled Pork Barbecue</p>
+                                <p>327 kcal</p>
+                            </li>
+                            <li class="at1_hover">
+                                <p>풀드 포크 바비큐</p>
+                                <p>Pulled Pork Barbecue</p>
+                                <p>훈연한 미국 스타일의 풀드 포크 바비큐가<br>가득 들어간 샌드위치</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img/img_20.jpg">
+                            </li>
+                            <li>
+                                <p>터키 베이컨 아보카도</p>
+                                <p>Turkey Bacon Avocado</p>
+                                <p>420 kcal</p>
+                            </li>
+                            <li class="at1_hover">
+                                <p>터키 베이컨 아보카도</p>
+                                <p>Turkey Bacon Avocado</p>
+                                <p>담백한 터키와 바삭한 베이컨 환상조합에<br>부드러운 아보카도는 신의 한수</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img/img_21.jpg">
+                            </li>
+                            <li>
+                                <p>스테이크 & 치즈</p>
+                                <p>Steak & Cheese</p>
+                                <p>380 kcal</p>
+                            </li>
+                            <li class="at1_hover">
+                                <p>스테이크 & 치즈</p>
+                                <p>Steak & Cheese</p>
+                                <p>육즙이 쫙~ 비프 스테이크의 풍미가 입안 한가득</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="at at2" id="ati2">
+            <div class="at2_bigimg">
+                <div>
+                    <div>
+                        <div id="at2_ani1"><img src="img/menu4_img.jpg"></div>
+                        <div id="at2_ani2"><img src="img/menu4_img2.jpg"></div>
+                    </div>
+                    <p>Wrap</p>
+                    <p>Subway를 더 맛있고 간편하게 즐기는 방법<br>최상의 레시피로 만들어진 써브웨이 랩 시리즈, 이젠 고민하지 마세요!</p>
+                </div>
+                <div class="at2_submenu1">
+                    <ul>
+                        <li id="at2_bt1_1">
+                            <p>샌드위치</p> 
+                            <p>ㅣ</p> 
+                        </li>
+                        <li id="at2_bt1_2">
+                            <p>랩 . 기타</p> 
+                            <p>ㅣ</p> 
+                        </li>
+                        <li id="at2_bt1_3">
+                            <p>찹샐러드</p> 
+                            <p>ㅣ</p> 
+                        </li>
+                        <li id="at2_bt1_4">
+                            <p>아침메뉴</p> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at2_submenu2">
+                <div>
+                    <ul>
+                        <li id="at2_bt2_1" class="at2_bt2">시그니처 랩</li>
+                        <li>ㅣ</li>
+                        <li id="at2_bt2_2" class="at2_bt2">미니 랩</li>
+                        <li>ㅣ</li>
+                        <li id="at2_bt2_3" class="at2_bt2">그릴드 랩</li>
+                        <li>ㅣ</li>
+                        <li id="at2_bt2_4" class="at2_bt2">파니니</li>
+                    </ul>
+                </div>
+                <div class="at2_box">
+                    <div id="ati2_box1" class="ati2_box">
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_1.jpg">
+                            </li>
+                            <li>
+                                <p>스테이크&치즈 아보카도 랩</p>
+                                <p>Steak&Cheese Avocado Wrap</p>
+                                <p>451 kcal</p>
+                            </li>
+                            <li class="at2_hover">
+                                <p>스테이크&치즈 아보카도 랩</p>
+                                <p>Steak&Cheese Avocado Wrap</p>
+                                <p>육즙 가득 스테이크에 프레쉬함을 더해줄<br>아보카도와 슈레드치즈 그리고<br>모차렐라 치즈까지!</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_2.jpg">
+                            </li>
+                            <li>
+                                <p>쉬림프 에그마요 랩</p>
+                                <p>Shrimp Egg Mayo Wrap</p>
+                                <p>410 kcal</p>
+                            </li>
+                            <li class="at2_hover">
+                                <p>쉬림프 에그마요 랩</p>
+                                <p>Shrimp Egg Mayo Wrap</p>
+                                <p>부드럽고 고소한 에그마요 안에<br>탱글한 통새우가 쏘옥~!<br>최상의 조합으로 탄생한 쉬림프 에그마요 랩!!</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="ati2_box2" class="ati2_box">
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_3.jpg">
+                            </li>
+                            <li>
+                                <p>이탈리안 미니 랩</p>
+                                <p>Italian Mini Wrap</p>
+                                <p>405 kcal</p>
+                            </li>
+                            <li class="at2_hover">
+                                <p>이탈리안 미니 랩</p>
+                                <p>Italian Mini Wrap</p>
+                                <p>작지만 화끈하다!<br>입안 가득 즐기는 이탈리아의 풍미.</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_4.jpg">
+                            </li>
+                            <li>
+                                <p>치킨 베이컨 미니 랩</p>
+                                <p>Chicken Bacon Mini Wrap</p>
+                                <p>376 kcal</p>
+                            </li>
+                            <li class="at2_hover">
+                                <p>치킨 베이컨 미니 랩</p>
+                                <p>Chicken Bacon Mini Wrap</p>
+                                <p>담백한 치킨, 바삭한 베이컨 비츠가<br>쫀득한 통밀 랩에 쏘옥~</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="ati2_box3" class="ati2_box">
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_5.png">
+                            </li>
+                            <li>
+                                <p>쉬림프 에그 그릴드 랩</p>
+                                <p>Shrimp Egg Grilled Wrap</p>
+                                <p>427 kcal</p>
+                            </li>
+                            <li class="at2_hover">
+                                <p>쉬림프 에그 그릴드 랩</p>
+                                <p>Shrimp Egg Grilled Wrap</p>
+                                <p>더 뜨겁게, 더 맛있게 즐기자!<br>탱글한 새우와 부드러운 오믈렛의 만남</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_6.png">
+                            </li>
+                            <li>
+                                <p>스테이크&치즈 아보카도 그릴드 랩</p>
+                                <p>Steak&Cheese Avocado Grilled Wrap</p>
+                                <p>451 kcal</p>
+                            </li>
+                            <li class="at2_hover">
+                                <p>스테이크&치즈 아보카도 그릴드 랩</p>
+                                <p>Steak&Cheese Avocado Grilled Wrap</p>
+                                <p>더 뜨겁게, 더 맛있게 즐기자!<br>육즙이 쫙~ 비프 스테이크와 아보카도가 만나다!</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_7.png">
+                            </li>
+                            <li>
+                                <p>치킨 베이컨 미니 그릴드 랩</p>
+                                <p>Chicken Bacon Mini Grilled Wrap</p>
+                                <p>376 kcal</p>
+                            </li>
+                            <li class="at2_hover">
+                                <p>치킨 베이컨 미니 그릴드 랩</p>
+                                <p>Chicken Bacon Mini Grilled Wrap</p>
+                                <p>더 뜨겁게, 더 맛있게 즐기자!<br>담백한 치킨, 바삭한 베이컨 비츠가 쏙</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="ati2_box4" class="ati2_box">
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_9.png">
+                            </li>
+                            <li>
+                                <p>스테이크&치즈 파니니</p>
+                                <p>Steak&Cheese Panini</p>
+                                <p>453 kcal</p>
+                            </li>
+                            <li class="at2_hover">
+                                <p>스테이크&치즈 파니니</p>
+                                <p>Steak&Cheese Panini</p>
+                                <p>바삭한 식감에 치즈는 두배로<br>써브웨이 베스트 메뉴 스테이크&치즈를<br>파니니로 즐겨보세요!</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_10.png">
+                            </li>
+                            <li>
+                                <p>로티세리 바비큐 치킨 파니니</p>
+                                <p>Rotisserie Barbecue Chicken Panini</p>
+                                <p>450 kcal</p>
+                            </li>
+                            <li class="at2_hover">
+                                <p>로티세리 바비큐 치킨 파니니</p>
+                                <p>Rotisserie Barbecue Chicken Panini</p>
+                                <p>바삭한 식감에 치즈는 두배로<br>풍미 가득한 로티세리 바비큐 치킨을<br>파니니로 즐겨보세요!</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="at at3" id="ati3">
+            <div class="at3_bigimg">
+                <div>
+                    <div>
+                        <div id="at3_ani1"><img src="img/menu2_img.jpg"></div>
+                        <div id="at3_ani2"><img src="img/menu2_img2.jpg"></div>
+                    </div>
+                    <p>Chopped Salad</p>
+                    <p>양은 더 많이! 칼로리는 더 적게!<br>신선한 야채와 다양한 소스로 가볍게 찹 샐러드를 즐겨보세요!</p>
+                </div>
+                <div class="at3_submenu1">
+                    <ul>
+                        <li id="at3_bt1_1">
+                            <p>샌드위치</p> 
+                            <p>ㅣ</p> 
+                        </li>
+                        <li id="at3_bt1_2">
+                            <p>랩 . 기타</p> 
+                            <p>ㅣ</p> 
+                        </li>
+                        <li id="at3_bt1_3">
+                            <p>찹샐러드</p> 
+                            <p>ㅣ</p> 
+                        </li>
+                        <li id="at3_bt1_4">
+                            <p>아침메뉴</p> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at3_submenu2">
+                <div>
+                    <ul>
+                        <li id="at3_bt2_1" class="at3_bt2">클래식</li>
+                        <li>ㅣ</li>
+                        <li id="at3_bt2_2" class="at3_bt2">프레쉬&라이트</li>
+                        <li>ㅣ</li>
+                        <li id="at3_bt2_3" class="at3_bt2">프리미엄</li>
+                    </ul>
+                </div>
+                <div class="at3_box">
+                    <div id="ati3_box1" class="ati3_box">
+                        <ul>
+                            <li>
+                                <img src="img3/Salad_1.jpg">
+                            </li>
+                            <li>
+                                <p>이탈리안 비엠티</p>
+                                <p>Italian B.M.T.</p>
+                                <p>230 kcal</p>
+                            </li>
+                            <li class="at3_hover">
+                                <p>이탈리안 비엠티</p>
+                                <p>Italian B.M.T.</p>
+                                <p>페퍼로니, 살라미 그리고 햄이 만들어내는 최상의<br>조화! 전세계가 사랑하는 써브웨이의 베스트셀러!</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/Salad_2.jpg">
+                            </li>
+                            <li>
+                                <p>비엘티</p>
+                                <p>B.L.T</p>
+                                <p>220 kcal</p>
+                            </li>
+                            <li class="at3_hover">
+                                <p>비엘티</p>
+                                <p>B.L.T</p>
+                                <p>오리지널 아메리칸 스타일 베이컨의<br>풍미와 바삭함 그대로</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/Salad_3.jpg">
+                            </li>
+                            <li>
+                                <p>미트볼</p>
+                                <p>Meatball</p>
+                                <p>310 kcal</p>
+                            </li>
+                            <li class="at3_hover">
+                                <p>미트볼</p>
+                                <p>Meatball</p>
+                                <p>이탈리안 스타일 비프 미트볼이 토핑된 찹 샐러드</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/Salad_4.jpg">
+                            </li>
+                            <li>
+                                <p>햄</p>
+                                <p>Ham</p>
+                                <p>110 kcal</p>
+                            </li>
+                            <li class="at3_hover">
+                                <p>햄</p>
+                                <p>Ham</p>
+                                <p>기본 중에 기본! 풍부한 햄 토핑 가득 찹 샐러드</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/Salad_5.jpg">
+                            </li>
+                            <li>
+                                <p>참치</p>
+                                <p>Tuna</p>
+                                <p>310 kcal</p>
+                            </li>
+                            <li class="at3_hover">
+                                <p>참치</p>
+                                <p>Tuna</p>
+                                <p>남녀노소 누구나 좋아하는 담백한 참치와<br>고소한 마요네즈의 완벽한 조화</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/Salad_6.jpg">
+                            </li>
+                            <li>
+                                <p>에그마요</p>
+                                <p>Egg Mayo</p>
+                                <p>310 kcal</p>
+                            </li>
+                            <li class="at3_hover">
+                                <p>에그마요</p>
+                                <p>Egg Mayo</p>
+                                <p>부드러운 달걀과 고소한 마요네즈가 만나<br>더 부드러운 스테디셀러</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="ati3_box2" class="ati3_box">
+                        <ul>
+                            <li>
+                                <img src="img3/Salad_7.jpg">
+                            </li>
+                            <li>
+                                <p>로티세리 치킨</p>
+                                <p>Rotisserie Chicken</p>
+                                <p>170 kcal</p>
+                            </li>
+                            <li class="at3_hover">
+                                <p>로티세리 치킨</p>
+                                <p>Rotisserie Chicken</p>
+                                <p>촉촉한 바비큐 치킨의 풍미가득.<br>손으로 찢어 더욱 부드러운 치킨이 찹 샐러드에 쏙</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/Salad_8.jpg">
+                            </li>
+                            <li>
+                                <p>로스트 치킨</p>
+                                <p>Roasted Chicken</p>
+                                <p>150 kcal</p>
+                            </li>
+                            <li class="at3_hover">
+                                <p>로스트 치킨</p>
+                                <p>Roasted Chicken</p>
+                                <p>오븐에 구워 담백한 저칼로리<br>닭가슴살의 건강한 풍미</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/Salad_9.jpg">
+                            </li>
+                            <li>
+                                <p>써브웨이 클럽</p>
+                                <p>Subway Club</p>
+                                <p>138 kcal</p>
+                            </li>
+                            <li class="at3_hover">
+                                <p>써브웨이 클럽</p>
+                                <p>Subway Club</p>
+                                <p>터키, 햄, 베이컨의 완벽한 앙상블~!</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/Salad_10.jpg">
+                            </li>
+                            <li>
+                                <p>터키</p>
+                                <p>Turkey</p>
+                                <p>110 kcal</p>
+                            </li>
+                            <li class="at3_hover">
+                                <p>터키</p>
+                                <p>Turkey</p>
+                                <p>더 슬림하게 즐기자! 오리지날 터키 찹 샐러드</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/Salad_11.jpg">
+                            </li>
+                            <li>
+                                <p>베지</p>
+                                <p>Veggie Delite</p>
+                                <p>60 kcal</p>
+                            </li>
+                            <li class="at3_hover">
+                                <p>베지</p>
+                                <p>Veggie Delite</p>
+                                <p>7가지 야채만으로도 깔끔한 조화!<br>기본에 충실한 베지 찹 샐러드</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="ati3_box3" class="ati3_box">
+                        <ul>
+                            <li>
+                                <img src="img3/Salad_12.png">
+                            </li>
+                            <li>
+                                <p>스파이시 쉬림프</p>
+                                <p>Spicy Shrimp</p>
+                                <p>71 kcal</p>
+                            </li>
+                            <li class="at3_hover">
+                                <p>스파이시 쉬림프</p>
+                                <p>Spicy Shrimp</p>
+                                <p>빨간맛에 빠진 쉬림프! 이국적인 매콤함이<br>더해진 시즌 한정 스파이시 쉬림프!</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/Salad_13.png">
+                            </li>
+                            <li>
+                                <p>스파이시 쉬림프 아보카도</p>
+                                <p>Spicy Shrimp Avocado</p>
+                                <p>127 kcal</p>
+                            </li>
+                            <li class="at3_hover">
+                                <p>스파이시 쉬림프 아보카도</p>
+                                <p>Spicy Shrimp Avocado</p>
+                                <p>매콤한 쉬림프와 부~드러운 아보카도가 만나,<br>이국적인 풍미 업!</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/Salad_14.jpg">
+                            </li>
+                            <li>
+                                <p>쉬림프</p>
+                                <p>Shrimp</p>
+                                <p>67 kcal</p>
+                            </li>
+                            <li class="at3_hover">
+                                <p>쉬림프</p>
+                                <p>Shrimp</p>
+                                <p>탱글한 식감이 그대로 살아있는<br>통새우 5마리가<br>찹 샐러드에 쏙! Fresh함이 그대로~</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/Salad_15.jpg">
+                            </li>
+                            <li>
+                                <p>풀드 포크 바베큐</p>
+                                <p>Pulled Pork Barbecue</p>
+                                <p>165 kcal</p>
+                            </li>
+                            <li class="at3_hover">
+                                <p>풀드 포크 바베큐</p>
+                                <p>Pulled Pork Barbecue</p>
+                                <p>훈연한 미국 스타일의 풀드 포크 바비큐가 가득<br>올라간 풍미 가득한 찹 샐러드</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/Salad_16.jpg">
+                            </li>
+                            <li>
+                                <p>스테이크&치즈</p>
+                                <p>Steak&Cheese</p>
+                                <p>210 kcal</p>
+                            </li>
+                            <li class="at3_hover">
+                                <p>스테이크&치즈</p>
+                                <p>Steak&Cheese</p>
+                                <p>육즙이 쫙~ 풍부한 비프 스테이크의 풍미 가득<br>스테이크& 치즈 찹 샐러드</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/Salad_17.jpg">
+                            </li>
+                            <li>
+                                <p>터키 베이컨 아보카도</p>
+                                <p>Turkey Bacon Avocado</p>
+                                <p>238 kcal</p>
+                            </li>
+                            <li class="at3_hover">
+                                <p>터키 베이컨 아보카도</p>
+                                <p>Turkey Bacon Avocado</p>
+                                <p>담백한 터키와 바삭한 베이컨 환상조합에<br>부드러운 아보카도는 신의 한수</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </article>
+
+        <article class="at at4" id="ati4">
+            <div class="at4_bigimg">
+                <div>
+                    <div>
+                        <div id="at4_ani1"><img src="img/menu3_img.jpg"></div>
+                        <div id="at4_ani2"><img src="img/menu3_img2.jpg"></div>
+                    </div>
+                    <p>Morning Menu</p>
+                    <p>아침 메뉴도 Subway와 함께, 취향대로 즐기자!<br>* 그릴드 랩과 파니니는 일부 매장에서만 제공됩니다.</p>
+                </div>
+                <div class="at4_submenu1">
+                    <ul>
+                        <li id="at4_bt1_1">
+                            <p>샌드위치</p> 
+                            <p>ㅣ</p> 
+                        </li>
+                        <li id="at4_bt1_2">
+                            <p>랩 . 기타</p> 
+                            <p>ㅣ</p> 
+                        </li>
+                        <li id="at4_bt1_3">
+                            <p>찹샐러드</p> 
+                            <p>ㅣ</p> 
+                        </li>
+                        <li id="at4_bt1_4">
+                            <p>아침메뉴</p> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at4_submenu2">
+                <div>
+                    <ul>
+                        <li id="at4_bt2_1" class="at4_bt2">샌드위치</li>
+                        <li>ㅣ</li>
+                        <li id="at4_bt2_2" class="at4_bt2">랩</li>
+                        <li>ㅣ</li>
+                        <li id="at4_bt2_3" class="at4_bt2">그릴드 랩</li>
+                        <li>ㅣ</li>
+                        <li id="at4_bt2_4" class="at4_bt2">파니니</li>
+                    </ul>
+                </div>
+                <div class="at4_box">
+                    <div id="ati4_box1" class="ati4_box">
+                        <ul>
+                            <li>
+                                <img src="img/img_16.png">
+                            </li>
+                            <li>
+                                <p>스테이크, 에그&치즈</p>
+                                <p>Steak, Egg&Cheese</p>
+                                <p>440 kcal</p>
+                            </li>
+                            <li class="at4_hover">
+                                <p>스테이크, 에그&치즈</p>
+                                <p>Steak, Egg&Cheese</p>
+                                <p>육즙 가득 비프 스테이크로 든든한 아침식사<br>※ 아침메뉴 제공시간 : 오전 11시까지</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img/img_13.png">
+                            </li>
+                            <li>
+                                <p>햄, 에그&치즈</p>
+                                <p>Ham, Egg&Cheese</p>
+                                <p>400 kcal</p>
+                            </li>
+                            <li class="at4_hover">
+                                <p>햄, 에그&치즈</p>
+                                <p>Ham, Egg&Cheese</p>
+                                <p>푹신한 오믈렛과 햄의 가장 클래식한 조화<br>※ 아침메뉴 제공시간 : 오전 11시까지</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img/img_14.png">
+                            </li>
+                            <li>
+                                <p>웨스턴, 에그&치즈</p>
+                                <p>Western, Egg&Cheese</p>
+                                <p>370 kcal</p>
+                            </li>
+                            <li class="at4_hover">
+                                <p>웨스턴, 에그&치즈</p>
+                                <p>Western, Egg&Cheese</p>
+                                <p>토마토, 피망, 양파 세가지 야채가 더해져<br>더욱 신선한 하루 시작!<br>※ 아침메뉴 제공시간 : 오전 11시까지</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img/img_15.png">
+                            </li>
+                            <li>
+                                <p>베이컨, 에그&치즈</p>
+                                <p>Bacon, Egg&Cheese</p>
+                                <p>450 kcal</p>
+                            </li>
+                            <li class="at4_hover">
+                                <p>베이컨, 에그&치즈</p>
+                                <p>Bacon, Egg&Cheese</p>
+                                <p>오리지널 아메리칸 스타일 베이컨으로<br>더욱 풍성한 아침 식사<br>※ 아침메뉴 제공시간 : 오전 11시까지</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="ati4_box2" class="ati4_box">
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_11.png">
+                            </li>
+                            <li>
+                                <p>스테이크, 에그&치즈 랩</p>
+                                <p>Steak, Egg&Cheese Wrap</p>
+                                <p>330 kcal</p>
+                            </li>
+                            <li class="at4_hover">
+                                <p>스테이크, 에그&치즈 랩</p>
+                                <p>Steak, Egg&Cheese Wrap</p>
+                                <p>육즙 가득 비프 스테이크로 든든한 아침식사<br>※ 아침메뉴 제공시간 : 오전 11시까지</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_12.png">
+                            </li>
+                            <li>
+                                <p>햄, 에그&치즈 랩</p>
+                                <p>Ham, Egg&Cheese Wrap</p>
+                                <p>288 kcal</p>
+                            </li>
+                            <li class="at4_hover">
+                                <p>햄, 에그&치즈 랩</p>
+                                <p>Ham, Egg&Cheese Wrap</p>
+                                <p>푹신한 오믈렛과 햄의 가장 클래식한 조화<br>※ 아침메뉴 제공시간 : 오전 11시까지</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_13.png">
+                            </li>
+                            <li>
+                                <p>웨스턴, 에그&치즈 랩</p>
+                                <p>Western, Egg&Cheese Wrap</p>
+                                <p>298 kcal</p>
+                            </li>
+                            <li class="at4_hover">
+                                <p>웨스턴, 에그&치즈 랩</p>
+                                <p>Western, Egg&Cheese Wrap</p>
+                                <p>토마토, 피망, 양파 세가지 야채가 더해져<br>더욱 신선한 하루 시작!<br>※ 아침메뉴 제공시간 : 오전 11시까지</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_14.png">
+                            </li>
+                            <li>
+                                <p>베이컨, 에그&치즈 랩</p>
+                                <p>Bacon, Egg&Cheese Wrap</p>
+                                <p>321 kcal</p>
+                            </li>
+                            <li class="at4_hover">
+                                <p>베이컨, 에그&치즈 랩</p>
+                                <p>Bacon, Egg&Cheese Wrap</p>
+                                <p>오리지널 아메리칸 스타일 베이컨으로<br>더욱 풍성한 아침 식사<br>※ 아침메뉴 제공시간 : 오전 11시까지</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="ati4_box3" class="ati4_box">
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_15.png">
+                            </li>
+                            <li>
+                                <p>스테이크, 에그&치즈 그릴드 랩</p>
+                                <p>Steak, Egg&Cheese Grilled Wrap</p>
+                                <p>309 kcal</p>
+                            </li>
+                            <li class="at4_hover">
+                                <p>스테이크, 에그&치즈 그릴드 랩</p>
+                                <p>Steak, Egg&Cheese Grilled Wrap</p>
+                                <p>그릴드 랩으로 더 뜨겁게, 더 맛있게!<br>육즙 가득 비프 스테이크로 든든한 아침식사<br>※ 아침메뉴 제공시간 : 오전 11시까지</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_16.png">
+                            </li>
+                            <li>
+                                <p>햄, 에그&치즈 그릴드 랩</p>
+                                <p>Ham, Egg&Cheese Grilled Wrap</p>
+                                <p>280 kcal</p>
+                            </li>
+                            <li class="at4_hover">
+                                <p>햄, 에그&치즈 그릴드 랩</p>
+                                <p>Ham, Egg&Cheese Grilled Wrap</p>
+                                <p>그릴드 랩으로 더 뜨겁게, 더 맛있게!<br>푹신한 오믈렛과 햄의 가장 클래식한 조화<br>※ 아침메뉴 제공시간 : 오전 11시까지</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_17.png">
+                            </li>
+                            <li>
+                                <p>웨스턴, 에그&치즈 그릴드 랩</p>
+                                <p>Western, Egg&Cheese Grilled Wrap</p>
+                                <p>276 kcal</p>
+                            </li>
+                            <li class="at4_hover">
+                                <p>웨스턴, 에그&치즈 그릴드 랩</p>
+                                <p>Western, Egg&Cheese Grilled Wrap</p>
+                                <p>토마토, 피망, 양파 세가지 야채가 더해져<br>더욱 신선한 하루 시작!<br>※ 아침메뉴 제공시간 : 오전 11시까지</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_18.png">
+                            </li>
+                            <li>
+                                <p>베이컨, 에그&치즈 그릴드 랩</p>
+                                <p>Bacon, Egg&Cheese Grilled Wrap</p>
+                                <p>300 kcal</p>
+                            </li>
+                            <li class="at4_hover">
+                                <p>베이컨, 에그&치즈 그릴드 랩</p>
+                                <p>Bacon, Egg&Cheese Grilled Wrap</p>
+                                <p>오리지널 아메리칸 스타일 베이컨으로<br>더욱 풍성한 아침 식사<br>※ 아침메뉴 제공시간 : 오전 11시까지</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="ati4_box4" class="ati4_box">
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_19.png">
+                            </li>
+                            <li>
+                                <p>스테이크, 에그&치즈 파니니</p>
+                                <p>Steak, Egg&Cheese Panini</p>
+                                <p>372 kcal</p>
+                            </li>
+                            <li class="at4_hover">
+                                <p>스테이크, 에그&치즈 파니니</p>
+                                <p>Steak, Egg&Cheese Panini</p>
+                                <p>파니니로 더 풍성하게 즐기는 아침!<br>육즙 가득 비프 스테이크로 든든한 아침식사<br>※ 아침메뉴 제공시간 : 오전 11시까지</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_20.png">
+                            </li>
+                            <li>
+                                <p>햄, 에그&치즈 파니니</p>
+                                <p>Ham, Egg&Cheese Panini</p>
+                                <p>330 kcal</p>
+                            </li>
+                            <li class="at4_hover">
+                                <p>햄, 에그&치즈 파니니</p>
+                                <p>Ham, Egg&Cheese Panini</p>
+                                <p>파니니로 더 풍성하게 즐기는 아침!<br>푹신한 오믈렛과 햄의 가장 클래식한 조화<br>※ 아침메뉴 제공시간 : 오전 11시까지</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_21.png">
+                            </li>
+                            <li>
+                                <p>웨스턴, 에그&치즈 파니니</p>
+                                <p>Western, Egg&Cheese Panini</p>
+                                <p>340 kcal</p>
+                            </li>
+                            <li class="at4_hover">
+                                <p>웨스턴, 에그&치즈 파니니</p>
+                                <p>Western, Egg&Cheese Panini</p>
+                                <p>토마토, 피망, 양파 세가지 야채가 더해져<br>더욱 신선한 하루 시작!<br>※ 아침메뉴 제공시간 : 오전 11시까지</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img3/wrap_22.png">
+                            </li>
+                            <li>
+                                <p>베이컨, 에그&치즈 파니니</p>
+                                <p>Bacon, Egg&Cheese Panini</p>
+                                <p>363 kcal</p>
+                            </li>
+                            <li class="at4_hover">
+                                <p>베이컨, 에그&치즈 파니니</p>
+                                <p>Bacon, Egg&Cheese Panini</p>
+                                <p>오리지널 아메리칸 스타일 베이컨으로<br>더욱 풍성한 아침 식사<br>※ 아침메뉴 제공시간 : 오전 11시까지</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            
+        </article>
+
+        <article class="at at5" id="ati5">
+            <div class="at5_bigimg">
+                <div>
+                    써브웨이 이용방법
+                </div>
+                <div class="at5_submenu1">
+                    <ul>
+                        <li id="at5_bt1_1">
+                            <p>써브웨이 이용방법</p>
+                            <p>ㅣ</p>  
+                        </li>
+                        <li id="at5_bt1_2">신선한 재료 소개</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at5_submenu2">
+                <div>
+                    <ul>
+                        <li id="at5_bt2_1">써브웨이 이용방법</li>
+                        <li id="at5_bt2_2">App 이용방법</li>
+                    </ul>
+                </div>
+                <div class="at5_box">
+                    <div id="ati5_box1">
+                        <ul>
+                            <li id="at5_step1" class="at5_step">
+                                <p>STEP</p>
+                                <p>1</p>
+                            </li>
+                            <li id="at5_bt1" class="at5_bt">▶</li>
+                            <li id="at5_step2" class="at5_step">
+                                <p>STEP</p>
+                                <p>2</p>
+                            </li>
+                            <li id="at5_bt2" class="at5_bt">▶</li>
+                            <li id="at5_step3" class="at5_step">
+                                <p>STEP</p>
+                                <p>3</p>
+                            </li>
+                            <li id="at5_bt3" class="at5_bt">▶</li>
+                            <li id="at5_step4" class="at5_step">
+                                <p>STEP</p>
+                                <p>4</p>
+                            </li>
+                            <li id="at5_bt4" class="at5_bt">▶</li>
+                            <li id="at5_step5" class="at5_step">
+                                <p>STEP</p>
+                                <p>5</p>
+                            </li>
+                        </ul>
+                        <div class="at5_order" id="at5_order1">
+                            <div id="at5_ani"><img src="img/order01.png"></div>
+                            <div><img src="img/text_box.png"></div>
+                            <ul>
+                                <li>
+                                    <p>STEP 1</p>
+                                    <p>메뉴 선택</p>
+                                </li>
+                                <li></li>
+                                <li>
+                                    <p>메뉴를 고르세요.</p>
+                                    <p>샌드위치(15cm 또는 30cm)와</p>
+                                    <p>찹샐러드 중 선택 가능합니다.</p>
+                                </li>
+                                <li class="at5_cli1">샌드위치 메뉴</li>
+                                <li class="at5_cli2">찹샐러드 메뉴</li>
+                            </ul>
+                        </div>
+                        <div class="at5_order" id="at5_order2">
+                            <div><img src="img/order02.png"></div>
+                            <div><img src="img/text_box.png"></div>
+                            <ul>
+                                <li>
+                                    <p>STEP 2</p>
+                                    <p>빵 선택</p>
+                                </li>
+                                <li></li>
+                                <li>
+                                    <p>매장에서 직접 구운 6가지 종류 중</p>
+                                    <p>고객님이 원하는 빵으로</p>
+                                    <p>추가비용 없이 선택 가능합니다.</p>
+                                </li>
+                                <li class="at5_cli3">빵 종류</li>
+                            </ul>
+                        </div>
+                        <div class="at5_order" id="at5_order3">
+                            <div><img src="img/order03.png"></div>
+                            <div><img src="img/text_box.png"></div>
+                            <ul>
+                                <li>
+                                    <p>STEP 3</p>
+                                    <p>추가토핑 선택</p>
+                                </li>
+                                <li></li>
+                                <li>
+                                    <p>나만의 토핑을 추가하여</p>
+                                    <p>메뉴를 더욱 풍성하게 즐기세요.</p>
+                                    <p></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="at5_order" id="at5_order4">
+                            <div><img src="img/order04.png"></div>
+                            <div><img src="img/text_box.png"></div>
+                            <ul>
+                                <li>
+                                    <p>STEP 4</p>
+                                    <p>야채&소스 선택</p>
+                                </li>
+                                <li></li>
+                                <li>
+                                    <p>나만의 스타일을 완성하는 단계!</p>
+                                    <p>원하지 않는 야채는 빼고 좋아하는</p>
+                                    <p>야채는 더하세요. 오늘의 기분에</p>
+                                    <p>맞는 소스를 선택해주세요.</p>
+                                </li>
+                                <li class="at5_cli4">야채 종류</li>
+                                <li class="at5_cli5">소스 종류</li>
+                            </ul>
+                        </div>
+                        <div class="at5_order" id="at5_order5">
+                            <div><img src="img/order05.png"></div>
+                            <div><img src="img/text_box.png"></div>
+                            <ul>
+                                <li>
+                                    <p>STEP 5</p>
+                                    <p>세트 선택</p>
+                                </li>
+                                <li></li>
+                                <li>
+                                    <p>세트로 구매하시면 할인혜택을</p>
+                                    <p>받으실 수 있습니다.</p>
+                                    <p>세트로 더욱 든든하게 즐기세요!</p>
+                                </li>
+                                <li class="at5_cli1">샌드위치 메뉴</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="ati5_box2">
+                        <ul>
+                            <li id="at5_step01" class="at5_step0">
+                                <p>STEP</p>
+                                <p>1</p>
+                            </li>
+                            <li id="at5_bt01" class="at5_bt0">▶</li>
+                            <li id="at5_step02" class="at5_step0">
+                                <p>STEP</p>
+                                <p>2</p>
+                            </li>
+                            <li id="at5_bt02" class="at5_bt0">▶</li>
+                            <li id="at5_step03" class="at5_step0">
+                                <p>STEP</p>
+                                <p>3</p>
+                            </li>
+                            <li id="at5_bt03" class="at5_bt0">▶</li>
+                            <li id="at5_step04" class="at5_step0">
+                                <p>STEP</p>
+                                <p>4</p>
+                            </li>
+                            <li id="at5_bt04" class="at5_bt0">▶</li>
+                            <li id="at5_step05" class="at5_step0">
+                                <p>STEP</p>
+                                <p>5</p>
+                            </li>
+                        </ul>
+                        <div class="at5_order0" id="at5_order01">
+                            <div id="at5_ani"><img src="img/fast_1.png"></div>
+                            <div><img src="img/text_box.png"></div>
+                            <ul>
+                                <li>
+                                    <p>STEP 1</p>
+                                    <p>매장 선택</p>
+                                </li>
+                                <li></li>
+                                <li>
+                                    <p>현재 위치에서 가장 가까운 매장, 혹은</p>
+                                    <p>픽업을 원하는 매장을 검색하시고 선택해주세요.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="at5_order0" id="at5_order02">
+                            <div><img src="img/fast_2.png"></div>
+                            <div><img src="img/text_box.png"></div>
+                            <ul>
+                                <li>
+                                    <p>STEP 2</p>
+                                    <p>메뉴 선택</p>
+                                </li>
+                                <li></li>
+                                <li>
+                                    <p>써브웨의 메뉴를 더 맛있고</p>
+                                    <p>특별하게 즐기는 방법!</p>
+                                    <p>원하시는 메뉴를 선택해주세요.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="at5_order0" id="at5_order03">
+                            <div><img src="img/fast_3.png"></div>
+                            <div><img src="img/text_box.png"></div>
+                            <ul>
+                                <li>
+                                    <p>STEP 3</p>
+                                    <p>사이드메뉴 추가</p>
+                                </li>
+                                <li></li>
+                                <li>
+                                    <p>선택한 메뉴를 장바구니에 담고</p>
+                                    <p>사이드메뉴를 추가해보세요.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="at5_order0" id="at5_order04">
+                            <div><img src="img/fast_4.png"></div>
+                            <div><img src="img/text_box.png"></div>
+                            <ul>
+                                <li>
+                                    <p>STEP 4</p>
+                                    <p>주문하기</p>
+                                </li>
+                                <li></li>
+                                <li>
+                                    <p>매장, 주문내역, 주문금액, 할인금액</p>
+                                    <p>결제방법, 쿠폰을 확인 후 결제를</p>
+                                    <p>진행해주세요.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="at5_order0" id="at5_order05">
+                            <div><img src="img/fast_5.png"></div>
+                            <div><img src="img/text_box.png"></div>
+                            <ul>
+                                <li>
+                                    <p>STEP 5</p>
+                                    <p>결제하기</p>
+                                </li>
+                                <li></li>
+                                <li>
+                                    <p>결제를 완료하셨다면</p>
+                                    <p>지정하신 픽업매장으로 가셔서</p>
+                                    <p>써브웨이를 즐기시면 끝!</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="at at6" id="ati6">
+            <div class="at6_bigimg">
+                <div>
+                    <div>
+                        <div id="at6_ani1"><img src="img/menu5_img.jpg"></div>
+                        <div id="at6_ani2"><img src="img/menu5_img2.jpg"></div>
+                        <div id="at6_ani3"><img src="img/menu5_img3.jpg"></div>
+                    </div>
+                    <p>Fresh Ingredients</p>
+                    <p>매장에서 직접 굽는 빵, 엄격하게 세척하는 야채의 신선함<br>써브웨이만의 다양한 소스를 맛보세요.</p>
+                </div>
+                <div class="at6_submenu1">
+                    <ul>
+                        <li id="at6_bt1_1">
+                            <p>써브웨이 이용방법</p>
+                            <p>ㅣ</p>
+                        </li>
+                        <li id="at6_bt1_2">신선한 재료 소개</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at6_submenu2" id="ati6_submenu2">
+                <div>
+                    <ul>
+                        <li id="at6_bt2_1" class="at6_bt2">빵</li>
+                        <li>ㅣ</li>
+                        <li id="at6_bt2_2" class="at6_bt2">야채</li>
+                        <li>ㅣ</li>
+                        <li id="at6_bt2_3" class="at6_bt2">치즈</li>
+                        <li>ㅣ</li>
+                        <li id="at6_bt2_4" class="at6_bt2">소스</li>
+                    </ul>
+                </div>
+                <div class="at6_box">
+                    <div id="ati6_box1" class="ati6_box">
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_b0.jpg">
+                            </li>
+                            <li>
+                                <p>허니오트</p>
+                                <p>Honey Oat</p>
+                                <p>230 kcal</p>
+                            </li>
+                            <li class="at6_hover">
+                                <p>허니오트</p>
+                                <p>Honey Oat</p>
+                                <p>고소한 위트빵에 오트밀 가루를 묻혀<br>고소함과 식감이 두배로</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_b1.jpg">
+                            </li>
+                            <li>
+                                <p>하티</p>
+                                <p>Hearty Italian</p>
+                                <p>210 kcal</p>
+                            </li>
+                            <li class="at6_hover">
+                                <p>하티</p>
+                                <p>Hearty Italian</p>
+                                <p>부드러운 화이트빵에 옥수수가루를 묻혀<br>겉은 바삭하고 고소하며 속은 부드럽게</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_b2.jpg">
+                            </li>
+                            <li>
+                                <p>위트</p>
+                                <p>Wheat</p>
+                                <p>210 kcal</p>
+                            </li>
+                            <li class="at6_hover">
+                                <p>위트</p>
+                                <p>Wheat</p>
+                                <p>9가지 곡물로 만들어 건강하고<br>고소한 맛의 곡물빵</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_b3.jpg">
+                            </li>
+                            <li>
+                                <p>파마산 오레가노</p>
+                                <p>Parmesan Oregano</p>
+                                <p>210 kcal</p>
+                            </li>
+                            <li class="at6_hover">
+                                <p>파마산 오레가노</p>
+                                <p>Parmesan Oregano</p>
+                                <p>부드러운 화이트빵에<br>파마산 오레가노 시즈닝을 묻혀 허브향 가득</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_b4.jpg">
+                            </li>
+                            <li>
+                                <p>화이트</p>
+                                <p>White</p>
+                                <p>200 kcal</p>
+                            </li>
+                            <li class="at6_hover">
+                                <p>화이트</p>
+                                <p>White</p>
+                                <p>가장 클래식한 빵으로 부드러운<br>식감이 매력 포인트</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_b5.jpg">
+                            </li>
+                            <li>
+                                <p>플랫브레드</p>
+                                <p>Flat Bread</p>
+                                <p>230 kcal</p>
+                            </li>
+                            <li class="at6_hover">
+                                <p>플랫브레드</p>
+                                <p>Flat Bread</p>
+                                <p>이름처럼 납작 모양에 피자 도우처럼<br>쫀득한 맛이 일품</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="ati6_box2" class="ati6_box">
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_v01.jpg">
+                            </li>
+                            <li>
+                                <p>양상추</p>
+                                <p>Lettuce</p>
+                                <p>5 kcal</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_v02.jpg">
+                            </li>
+                            <li>
+                                <p>토마토</p>
+                                <p>Tomatos</p>
+                                <p>5 kcal</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_v03.jpg">
+                            </li>
+                            <li>
+                                <p>오이</p>
+                                <p>Cucumbers</p>
+                                <p>5 kcal</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_v04.jpg">
+                            </li>
+                            <li>
+                                <p>피망</p>
+                                <p>Peppers</p>
+                                <p>5 kcal</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_v05.jpg">
+                            </li>
+                            <li>
+                                <p>양파</p>
+                                <p>Red Onions</p>
+                                <p>5 kcal</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_v06.jpg">
+                            </li>
+                            <li>
+                                <p>피클</p>
+                                <p>Pickles</p>
+                                <p>5 kcal</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_v07.jpg">
+                            </li>
+                            <li>
+                                <p>올리브</p>
+                                <p>Olives</p>
+                                <p>5 kcal</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_v08.jpg">
+                            </li>
+                            <li>
+                                <p>할라피뇨</p>
+                                <p>Jalapenos</p>
+                                <p>5 kcal</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_v09.jpg">
+                            </li>
+                            <li>
+                                <p>아보카도</p>
+                                <p>Avocado</p>
+                                <p>60 kcal</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="ati6_box3" class="ati6_box">
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_c01.jpg">
+                            </li>
+                            <li>
+                                <p>아메리칸 치즈</p>
+                                <p>American Cheese</p>
+                                <p>40 kcal</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_c02.jpg">
+                            </li>
+                            <li>
+                                <p>슈레드 치즈</p>
+                                <p>Shredded Cheese</p>
+                                <p>50 kcal</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_c03.jpg">
+                            </li>
+                            <li>
+                                <p>모차렐라 치즈</p>
+                                <p>Mozzarella Cheese</p>
+                                <p>44 kcal</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="ati6_box4" class="ati6_box">
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_s01.jpg">
+                            </li>
+                            <li>
+                                <p>랜치</p>
+                                <p>Ranch</p>
+                                <p>110 kcal</p>
+                            </li>
+                            <li class="at6_hover">
+                                <p>랜치</p>
+                                <p>Ranch</p>
+                                <p>고소한 마요네즈와 레몬즙의 만남!<br>고소함이 두배!</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_s02.jpg">
+                            </li>
+                            <li>
+                                <p>마요네즈</p>
+                                <p>Mayonnaise</p>
+                                <p>110 kcal</p>
+                            </li>
+                            <li class="at6_hover">
+                                <p>마요네즈</p>
+                                <p>Mayonnaise</p>
+                                <p>말이 필요없는 고소함의 대명사, 마요네즈 소스</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_s03.jpg">
+                            </li>
+                            <li>
+                                <p>허니 머스타드</p>
+                                <p>Honey Mustard</p>
+                                <p>30 kcal</p>
+                            </li>
+                            <li class="at6_hover">
+                                <p>허니 머스타드</p>
+                                <p>Honey Mustard</p>
+                                <p>겨자씨가 아낌없이 들어간 머스타드 소스</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_s04.jpg">
+                            </li>
+                            <li>
+                                <p>스위트 어니언</p>
+                                <p>Sweet Onion</p>
+                                <p>40 kcal</p>
+                            </li>
+                            <li class="at6_hover">
+                                <p>스위트 어니언</p>
+                                <p>Sweet Onion</p>
+                                <p>써브웨이만의 특제 레시피로<br>만든 달콤한 양파소스</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_s05.jpg">
+                            </li>
+                            <li>
+                                <p>사우스웨스트 치폴레</p>
+                                <p>Southwest Chipotle</p>
+                                <p>100 kcal</p>
+                            </li>
+                            <li class="at6_hover">
+                                <p>사우스웨스트 치폴레</p>
+                                <p>Southwest Chipotle</p>
+                                <p>핫 칠리와 고소한 마요네즈가 만난<br>이국적인 매콤한 맛</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_s06.jpg">
+                            </li>
+                            <li>
+                                <p>머스타드</p>
+                                <p>Yellow Mustard</p>
+                                <p>44 kcal</p>
+                            </li>
+                            <li class="at6_hover">
+                                <p>머스타드</p>
+                                <p>Yellow Mustard</p>
+                                <p>오리지날 옐로우 머스타드 소스</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_s07.jpg">
+                            </li>
+                            <li>
+                                <p>스위트 칠리</p>
+                                <p>Sweet Chilli</p>
+                                <p>30 kcal</p>
+                            </li>
+                            <li class="at6_hover">
+                                <p>스위트 칠리</p>
+                                <p>Sweet Chilli</p>
+                                <p>매콤한 칠리에 더해진 기분 좋은 달콤함!</p>
+                                <div>
+                                    <img src="img/ss.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_s09.jpg">
+                            </li>
+                            <li>
+                                <p>소금</p>
+                                <p>Salt</p>
+                            </li>
+                            <li class="at6_hover">
+                                <p>소금</p>
+                                <p>Salt</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="img2/img_recipe_s10.jpg">
+                            </li>
+                            <li>
+                                <p>후추</p>
+                                <p>Black Pepper</p>
+                            </li>
+                            <li class="at6_hover">
+                                <p>후추</p>
+                                <p>Black Pepper</p>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>   
+        </article>
+
+        <article class="at at7" id="ati7">
+            <div class="at7_bigimg">
+                <div>
+                    이벤트 . 프로모션
+                </div>
+                <div class="at7_submenu1">
+                    <ul>
+                        <li id="at7_bt1_1">
+                            <p>이벤트 . 프로모션</p> 
+                            <p>ㅣ</p>
+                        </li>
+                        <li id="at7_bt1_2">뉴스 . 공지사항</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at7_subimg" id="at7_bg">
+                <div>
+                    <ul id="ati7_subimg">
+                        <li id="at7_click1">
+                            <ul>
+                                <li>2021.05.04 ~ 2021.06.30</li>
+                                <li>스파이시 쉬림프</li>
+                            </ul>
+                            <ul>
+                                <li><img src="img/event1.jpg"></li>
+                            </ul>
+                            <div id="at7_hover1">
+                                <p>클릭하여 상세 정보를 확인하세요!</p>
+                            </div>
+                        </li>
+                        <li id="at7_click2">
+                            <ul>
+                                <li>2021.05.04 ~ 2021.06.30</li>
+                                <li>이달의 썹!프라이즈!</li>
+                            </ul>
+                            <ul>
+                                <li><img src="img/event2.jpg"></li>
+                            </ul>
+                            <div id="at7_hover2">
+                                <p>클릭하여 상세 정보를 확인하세요!</p>
+                            </div>
+                        </li>
+                        <li id="at7_click3">
+                            <ul>
+                                <li>2020.11.16 ~</li>
+                                <li>써브웨이 아침메뉴!</li>
+                            </ul>
+                            <ul>
+                                <li><img src="img/event3.jpg"></li>
+                            </ul>
+                            <div id="at7_hover3">
+                                <p>클릭하여 상세 정보를 확인하세요!</p>
+                            </div>
+                        </li>
+                        <li id="at7_click4">
+                            <ul>
+                                <li>2020.10.16 ~</li>
+                                <li>말이 안 나올 땐 손으로 주문하자!</li>
+                            </ul>
+                            <ul>
+                                <li><img src="img/event4.jpg"></li>
+                            </ul>
+                            <div id="at7_hover4">
+                                <p>클릭하여 상세 정보를 확인하세요!</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="at7_big1" class="at7_big"><img src="img/event1_1.png"></div>
+                    <div id="at7_big2" class="at7_big"><img src="img/event2_1.jpg"></div>
+                    <div id="at7_big3" class="at7_big"><img src="img/event3_1.jpg"></div>
+                    <div id="at7_big4" class="at7_big"><img src="img/event4_1.png"></div>
+                </div>
+            </div>
+        </article>
+
+        <article class="at at8" id="ati8">
+            <div class="at8_bigimg">
+                <div>
+                    뉴스 . 공지사항
+                </div>
+                <div class="at8_submenu1">
+                    <ul>
+                        <li id="at8_bt1_1">
+                            <p>이벤트 . 프로모션</p> 
+                            <p>ㅣ</p>
+                        </li>
+                        <li id="at8_bt1_2">뉴스 . 공지사항</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="at8_bm at8_bm1">
+                    <div>
+                        <ul>
+                            <li><img src="img/icon_notice.png"></li>
+                            <li>써브웨이와 함께하는 tvN '간떨어지는동거'</li>
+                            <li>21.05.27</li>
+                        </ul>
+                        <ul>
+                            <li><img src="img/icon_notice.png"></li>
+                            <li>써브웨이 2021년 5월 가격 인상 안내</li>
+                            <li>21.05.03</li>
+                        </ul>
+                        <ul>
+                            <li><img src="img/icon_notice.png"></li>
+                            <li>써브웨이 모바일 상품권 이용 안내의 건</li>
+                            <li>19.08.20</li>
+                        </ul>
+                        <ul>
+                            <li><img src="img/icon_notice.png"></li>
+                            <li>고객 경험 설문조사 프로그램 안내</li>
+                            <li>18.07.20</li>
+                        </ul>
+                        <ul>
+                            <li>10</li>
+                            <li>써브웨이 고객센터 2021년 설 연휴 휴무 안내</li>
+                            <li>21.02.09</li>
+                        </ul>
+                        <ul>
+                            <li>9</li>
+                            <li>써브웨이와 함께하는 JTBC '라이브온'</li>
+                            <li>20.11.16</li>
+                        </ul>
+                        <ul>
+                            <li>8</li>
+                            <li>써브웨이와 함께하는 KBS '오!삼광빌라'</li>
+                            <li>20.09.21</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="at8_bm at8_bm2">
+                    <div>
+                        <ul>
+                            <li>7</li>
+                            <li>써브웨이와 함께하는 tvN '청춘기록'</li>
+                            <li>20.09.07</li>
+                        </ul>
+                        <ul>
+                            <li>6</li>
+                            <li>써브웨이와 함께하는 tvN '식스센스'</li>
+                            <li>20.09.07</li>
+                        </ul>
+                        <ul>
+                            <li>5</li>
+                            <li>개인정보 처리방침 개정안내</li>
+                            <li>20.07.01</li>
+                        </ul>
+                        <ul>
+                            <li>4</li>
+                            <li>써브카드 잔액 환불 안내</li>
+                            <li>20.07.01</li>
+                        </ul>
+                        <ul>
+                            <li>3</li>
+                            <li>써브웨이 스탬프 쿠폰 종료 안내</li>
+                            <li>20.06.22</li>
+                        </ul>
+                        <ul>
+                            <li>2</li>
+                            <li>써브웨이와 함께하는 tvN '사이코지만 괜찮아'</li>
+                            <li>20.06.17</li>
+                        </ul>
+                        <ul>
+                            <li>1</li>
+                            <li>써브웨이 2020년 3월 가격 인상 안내</li>
+                            <li>20.03.06</li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="at8_control">
+                    <li class="at8_left_btn">◀</li>
+                    <li class="at8_control_1">1</li>
+                    <li class="at8_control_2">2</li>
+                    <li class="at8_right_btn">▶</li>
+                </ul>
+            </div>
+            
+            <div class="at8_bm_bm at8_bm_bm1">
+                <div>
+                    <ul>
+                        <li>써브웨이와 함께하는 tvN '간떨어지는동거'</li>
+                        <li>2021.05.27</li>
+                        <li><img src="img/poster1.jpg" alt=""></li>
+                    </ul>
+                    <div class="at8_turn_btn1">
+                        <p><i class="fas fa-bars"></i></p>
+                        <p>목록으로</p>
+                    </div>
+                    <ul class="at8_arrow_btn at8_arrow_btn1">
+                        <li class="change_1">
+                            <p><i class="fas fa-arrow-down"></i></p>
+                            <p>써브웨이 2021년 5월 가격 인상 안내</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at8_bm_bm at8_bm_bm2">
+                <div>
+                    <ul>
+                        <li>써브웨이 2021년 5월 가격 인상 안내</li>
+                        <li>2021.05.03</li>
+                        <li><img src="img/poster2.jpg" alt=""></li>
+                    </ul>
+                    <div class="at8_turn_btn1">
+                        <p><i class="fas fa-bars"></i></p>
+                        <p>목록으로</p>
+                    </div>
+                    <ul class="at8_arrow_btn at8_arrow_btn2">
+                        <li class="change_2">
+                            <p><i class="fas fa-arrow-up"></i></p>
+                            <p>써브웨이와 함께하는 tvN '간떨어지는...</p>
+                        </li>
+                        <li class="change_3">
+                            <p><i class="fas fa-arrow-down"></i></p>
+                            <p>써브웨이 모바일 상품권 이용 안내의 건</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at8_bm_bm at8_bm_bm3">
+                <div>
+                    <ul>
+                        <li>써브웨이 모바일 상품권 이용 안내의 건</li>
+                        <li>2019.08.20</li>
+                        <li><img src="img/poster3.png" alt=""></li>
+                        <li class="at8_text at8_text1">
+                            <p>써브웨이(Subway®)가 매장에서 현금처럼 사용 가능한 모바일 상품권을 런칭 하였으며,</p>
+                            <p>각각의 모바일 상품권 이용을 위한 이용안내 사항 및 브랜드 정책은 다음과 같습니다. </p>
+                            <p>[금액권]</p>
+                            <p>- 결제 시 모바일 쿠폰을 제시해주세요.</p>
+                            <p>- 권면가액 미만 사용 시 잔액은 자동으로 관리되며, 유효기간 내에 사용 가능합니다.<br>&nbsp;&nbsp;(잔액은 매장에서 환불 불가)</p>
+                            <p>- 권면가액 이상 구매 시 현금/카드 등 추가 결제하여 사용 가능합니다.</p>
+                            <p>- 모바일 금액권 중복 사용 가능합니다.</p>
+                            <p>- 사전에 고지된 일부 이벤트에 한하여 모바일 상품권 사용이 제한될 수 있습니다.</p>
+                            <p>- 매장 방문 시에만 사용 가능합니다.</p>
+                            <p>- 사용 금액에 대한 현금영수증 발행 가능합니다.</p>
+                            <p>[제품권]</p>
+                            <p>- 본 쿠폰은 해당 상품으로만 교환이 가능 합니다.</p>
+                            <p>- 단, 매장 별 재고 상황에 따라 해당 제품으로 교환이 불가능 할 경우 동일 가격 또는 그 이상의 제품으로만 교<br>&nbsp;&nbsp;환 가능 합니다.</p>
+                            <p>- 결제 시 모바일 쿠폰을 제시해 주세요.</p>
+                            <p>- 모바일 금액권 중복 사용 가능합니다.</p>
+                            <p>- 할인 행사 여부에 따라 제품의 매장별 가격이 상이할 수 있으며, 결제는 브랜드 정책에 따릅니다.</p>
+                            <p>- 사전에 고지된 일부 이벤트에 한하여 모바일 상품권 사용이 제한될 수 있습니다.</p>
+                            <p>- 매장 방문 시에만 사용 가능합니다.</p>
+
+                            <p>- 고객센터 운영시간 : 평일 10:00 ~ 19:00(점심시간 13:00 ~ 14:00 / 주말 및 공휴일 휴무)</p>
+                            <p>이외 모든 모바일 상품권 관련 문의 사항은 고객센터(02-598-9874)에 문의 하실 수 있습니다.</p>
+                            <p>감사합니다.</p>
+                        </li>
+                    </ul>
+                    <div class="at8_turn_btn1">
+                        <p><i class="fas fa-bars"></i></p>
+                        <p>목록으로</p>
+                    </div>
+                    <ul class="at8_arrow_btn at8_arrow_btn3">
+                        <li class="change_1">
+                            <p><i class="fas fa-arrow-up"></i></p>
+                            <p>써브웨이 2021년 5월 가격 인상 안내</p>
+                        </li>
+                        <li class="change_4">
+                            <p><i class="fas fa-arrow-down"></i></p>
+                            <p>고객 경험 설문조사 프로그램 안내</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at8_bm_bm at8_bm_bm4">
+                <div>
+                    <ul>
+                        <li>고객 경험 설문조사 프로그램 안내</li>
+                        <li>2018.07.20</li>
+                        <li><img src="img/poster4.jpg" alt=""></li>
+                    </ul>
+                    <div class="at8_turn_btn1">
+                        <p><i class="fas fa-bars"></i></p>
+                        <p>목록으로</p>
+                    </div>
+                    <ul class="at8_arrow_btn at8_arrow_btn4">
+                        <li class="change_3">
+                            <p><i class="fas fa-arrow-up"></i></p>
+                            <p>써브웨이 모바일 상품권 이용 안내의 건</p>
+                        </li>
+                        <li class="change_5">
+                            <p><i class="fas fa-arrow-down"></i></p>
+                            <p>써브웨이 고객센터 2021년 설 연휴 휴...</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at8_bm_bm at8_bm_bm5">
+                <div>
+                    <ul>
+                        <li>써브웨이 고객센터 2021년 설 연휴 휴무 안내</li>
+                        <li>2021.02.09</li>
+                        <li class="at8_text at8_text2">
+                            <p>안녕하세요. 써브웨이 고객센터입니다.</p>
+                            <p>써브웨이 공식 홈페이지의 고객문의 접수, 처리 및 콜센터 업무가</p>
+                            <p>2월 11일(목)부터 2월 14일(일)까지 설 연휴 기간 동안 일시 중단됨을 알려드립니다.</p>
+                            <p>홈페이지 고객문의를 통해 언제든 글을 남기실 수 있으며,</p>
+                            <p>2월 15일(월)부터 순차적으로 답변을 드리겠습니다. 이용에 불편을 드려 죄송합니다.</p>
+                            <p>건강하고 즐거운 설 연휴 보내시길 바랍니다.</p>
+                            <p>새해 복 많이 받으세요.</p>
+                            <p>써브웨이 고객센터 올림</p>
+                        </li>
+                    </ul>
+                    <div class="at8_turn_btn1">
+                        <p><i class="fas fa-bars"></i></p>
+                        <p>목록으로</p>
+                    </div>
+                    <ul class="at8_arrow_btn at8_arrow_btn5">
+                        <li class="change_4">
+                            <p><i class="fas fa-arrow-up"></i></p>
+                            <p>고객 경험 설문조사 프로그램 안내</p>
+                        </li>
+                        <li class="change_6">
+                            <p><i class="fas fa-arrow-down"></i></p>
+                            <p>써브웨이와 함께하는 JTBC '라이브온'</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at8_bm_bm at8_bm_bm6">
+                <div>
+                    <ul>
+                        <li>써브웨이와 함께하는 JTBC '라이브온'</li>
+                        <li>2020.11.16</li>
+                        <li><img src="img/poster5.png" alt=""></li>
+                    </ul>
+                    <div class="at8_turn_btn1">
+                        <p><i class="fas fa-bars"></i></p>
+                        <p>목록으로</p>
+                    </div>
+                    <ul class="at8_arrow_btn at8_arrow_btn6">
+                        <li class="change_5">
+                            <p><i class="fas fa-arrow-up"></i></p>
+                            <p>써브웨이 고객센터 2021년 설 연휴 휴...</p>
+                        </li>
+                        <li class="change_7">
+                            <p><i class="fas fa-arrow-down"></i></p>
+                            <p>써브웨이와 함께하는 KBS '오!삼광빌라'</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at8_bm_bm at8_bm_bm7">
+                <div>
+                    <ul>
+                        <li>써브웨이와 함께하는 KBS '오!삼광빌라'</li>
+                        <li>2020.09.21</li>
+                        <li><img src="img/poster6.jpg" alt=""></li>
+                    </ul>
+                    <div class="at8_turn_btn1">
+                        <p><i class="fas fa-bars"></i></p>
+                        <p>목록으로</p>
+                    </div>
+                    <ul class="at8_arrow_btn at8_arrow_btn7">
+                        <li class="change_6">
+                            <p><i class="fas fa-arrow-up"></i></p>
+                            <p>써브웨이와 함께하는 JTBC '라이브온'</p>
+                        </li>
+                        <li class="change_8">
+                            <p><i class="fas fa-arrow-down"></i></p>
+                            <p>써브웨이와 함께하는 tvN '청춘기록'</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at8_bm_bm at8_bm_bm8">
+                <div>
+                    <ul>
+                        <li>써브웨이와 함께하는 tvN '청춘기록'</li>
+                        <li>2020.09.07</li>
+                        <li><img src="img/poster7.jpg" alt=""></li>
+                    </ul>
+                    <div class="at8_turn_btn2">
+                        <p><i class="fas fa-bars"></i></p>
+                        <p>목록으로</p>
+                    </div>
+                    <ul class="at8_arrow_btn at8_arrow_btn8">
+                        <li class="change_7">
+                            <p><i class="fas fa-arrow-up"></i></p>
+                            <p>써브웨이와 함께하는 KBS '오!삼광빌라'</p>
+                        </li>
+                        <li class="change_9">
+                            <p><i class="fas fa-arrow-down"></i></p>
+                            <p>써브웨이와 함께하는 tvN '식스센스'</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at8_bm_bm at8_bm_bm9">
+                <div>
+                    <ul>
+                        <li>써브웨이와 함께하는 tvN '식스센스'</li>
+                        <li>2020.09.07</li>
+                        <li><img src="img/poster8.jpg" alt=""></li>
+                    </ul>
+                    <div class="at8_turn_btn2">
+                        <p><i class="fas fa-bars"></i></p>
+                        <p>목록으로</p>
+                    </div>
+                    <ul class="at8_arrow_btn at8_arrow_btn9">
+                        <li class="change_8">
+                            <p><i class="fas fa-arrow-up"></i></p>
+                            <p>써브웨이와 함께하는 tvN '청춘기록'</p>
+                        </li>
+                        <li class="change_10">
+                            <p><i class="fas fa-arrow-down"></i></p>
+                            <p>개인정보 처리방침 개정안내</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at8_bm_bm at8_bm_bm10">
+                <div>
+                    <ul>
+                        <li>개인정보 처리방침 개정안내</li>
+                        <li>2020.07.01</li>
+                        <li class="at8_text at8_text3">
+                            <p>안녕하세요.</p>
+                            <p>개인정보 처리방침이 개정되어, 변경내용을 안내 드립니다.</p>
+                            <p>본 개정에 동의하지 않으시는 경우 거부의사 표시(회원탈퇴)를 하실 수 있으며,</p>
+                            <p>거부의사를 표시하지 않으신 경우 개정에 동의하신 것으로 간주됩니다.</p>
+                            <p>■ 개정사유</p>
+                            <p>서비스 확대에 따른 내용의 업데이트</p>
+                            <p>■ 개인정보 처리방침 주요 개정사항</p>
+                        </li>
+                        <li><img src="img/poster9.png" alt=""></li>
+                    </ul>
+                    <div class="at8_turn_btn2">
+                        <p><i class="fas fa-bars"></i></p>
+                        <p>목록으로</p>
+                    </div>
+                    <ul class="at8_arrow_btn at8_arrow_btn10">
+                        <li class="change_9">
+                            <p><i class="fas fa-arrow-up"></i></p>
+                            <p>써브웨이와 함께하는 tvN '식스센스'</p>
+                        </li>
+                        <li class="change_11">
+                            <p><i class="fas fa-arrow-down"></i></p>
+                            <p>써브카드 잔액 환불 안내</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at8_bm_bm at8_bm_bm11">
+                <div>
+                    <ul>
+                        <li>써브카드 잔액 환불 안내</li>
+                        <li>2020.07.01</li>
+                        <li><img src="img/poster10.jpg" alt=""></li>
+                    </ul>
+                    <div class="at8_turn_btn2">
+                        <p><i class="fas fa-bars"></i></p>
+                        <p>목록으로</p>
+                    </div>
+                    <ul class="at8_arrow_btn at8_arrow_btn11">
+                        <li class="change_10">
+                            <p><i class="fas fa-arrow-up"></i></p>
+                            <p>개인정보 처리방침 개정안내</p>
+                        </li>
+                        <li class="change_12">
+                            <p><i class="fas fa-arrow-down"></i></p>
+                            <p>써브웨이 스탬프 쿠폰 종료 안내</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at8_bm_bm at8_bm_bm12">
+                <div>
+                    <ul>
+                        <li>써브웨이 스탬프 쿠폰 종료 안내</li>
+                        <li>2020.06.22</li>
+                        <li><img src="img/poster11.jpg" alt=""></li>
+                    </ul>
+                    <div class="at8_turn_btn2">
+                        <p><i class="fas fa-bars"></i></p>
+                        <p>목록으로</p>
+                    </div>
+                    <ul class="at8_arrow_btn at8_arrow_btn12">
+                        <li class="change_11">
+                            <p><i class="fas fa-arrow-up"></i></p>
+                            <p>써브카드 잔액 환불 안내</p>
+                        </li>
+                        <li class="change_13">
+                            <p><i class="fas fa-arrow-down"></i></p>
+                            <p>써브웨이와 함께하는 tvN '사이코지...</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at8_bm_bm at8_bm_bm13">
+                <div>
+                    <ul>
+                        <li>써브웨이와 함께하는 tvN '사이코지만 괜찮아'</li>
+                        <li>2020.06.17</li>
+                        <li><img src="img/poster12.jpg" alt=""></li>
+                    </ul>
+                    <div class="at8_turn_btn2">
+                        <p><i class="fas fa-bars"></i></p>
+                        <p>목록으로</p>
+                    </div>
+                    <ul class="at8_arrow_btn at8_arrow_btn13">
+                        <li class="change_12">
+                            <p><i class="fas fa-arrow-up"></i></p>
+                            <p>써브웨이 스탬프 쿠폰 종료 안내</p>
+                        </li>
+                        <li class="change_14">
+                            <p><i class="fas fa-arrow-down"></i></p>
+                            <p>써브웨이 2020년 3월 가격 인상 안내</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at8_bm_bm at8_bm_bm14">
+                <div>
+                    <ul>
+                        <li>써브웨이 2020년 3월 가격 인상 안내</li>
+                        <li>2020.03.06</li>
+                        <li><img src="img/poster13.png" alt=""></li>
+                    </ul>
+                    <div class="at8_turn_btn2">
+                        <p><i class="fas fa-bars"></i></p>
+                        <p>목록으로</p>
+                    </div>
+                    <ul class="at8_arrow_btn at8_arrow_btn14">
+                        <li class="change_13">
+                            <p><i class="fas fa-arrow-up"></i></p>
+                            <p>써브웨이와 함께하는 tvN '사이코지...</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="at at9" id="ati9">
+            <div class="at9_submenu">
+                <div>
+                    <ul>
+                        <li id="at9_bt1">
+                            <p>써브웨이 역사</p>
+                            <p>ㅣ</p>
+                        </li>
+                        <li id="at9_bt2">
+                            <p>써브웨이 약속</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at9_bm1">
+                <div>
+                    <div class="at9_img1"><img src="img4/history7.png"></div>
+                    <div class="at9_img2"><img src="img4/history19.png"></div>
+                    <div class="at9_img3"><img src="img4/history8.png"></div>
+                    <div class="at9_img4"><img src="img4/history18.png"></div>
+                    <div class="at9_img5"><img src="img4/history18.png"></div>
+                    <div class="at9_text at9_text1">
+                        <p class="at9_color_y">1965</p>
+                        <p>17세 사업가, 프레드 델루카<br>Pete’s Super Submarines 오픈<br>(미국, 코네티컷)</p>
+                    </div>
+                    <div class="at9_text at9_text2">
+                        <p class="at9_color_y">1968</p>
+                        <p>공식 명칭 ‘써브웨이’ 사용 시작</p>
+                    </div>
+                    <div class="at9_text at9_text3">
+                        <p class="at9_color_y">1975</p>
+                        <p>클래식 BMT 출시</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="at9_bm2">
+                <div>
+                    <div class="at9_img6"><img src="img4/history9.png"></div>
+                    <div class="at9_img7"><img src="img4/history10.png"></div>
+                    <div class="at9_img8"><img src="img4/history11.png"></div>
+                    <div class="at9_img9"><img src="img4/history12.png"></div>
+                    <div class="at9_img10"><img src="img4/history19.png"></div>
+                    <div class="at9_img11"><img src="img4/history19.png"></div>
+                    <div class="at9_img12"><img src="img4/history19.png"></div>
+                    <div class="at9_img13"><img src="img4/history19.png"></div>
+                    <div class="at9_img14"><img src="img4/history19.png"></div>
+                    <div class="at9_img15"><img src="img4/history19.png"></div>
+                    <div class="at9_text at9_text4">
+                        <p class="at9_color_y">1984</p>
+                        <p>단체 고객을 위한<br>파티플래터 상품 출시</p>
+                    </div>
+                    <div class="at9_text at9_text5">
+                        <p class="at9_color_y">1983</p>
+                        <p>매장에서 직접 구워낸<br>신선한 빵 제공 시작</p>
+                    </div>
+                    <div class="at9_text at9_text6">
+                        <p class="at9_color_y">1988</p>
+                        <p>엔터프리지 선정 500대<br>프랜차이즈 기업 1위</p>
+                    </div>
+                    <div class="at9_text at9_text7">
+                        <p class="at9_color_y">1981-1987</p>
+                        <p>프랜차이즈를 통한<br>글로벌 사업 확장</p>
+                    </div>
+                    <div class="at9_text at9_text8">
+                        <p class="at9_color_y">1992</p>
+                        <p>편의 시설 주변에 오픈을 통해<br>대중적인 브랜드로 거듭나다</p>
+                    </div>
+                    <div class="at9_text at9_text9">
+                        <p class="at9_color_y">1997</p>
+                        <p>저지방 샌드위치<br>메뉴 출시</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="at9_bm3">
+                <div>
+                    <div class="at9_img16"><img src="img4/history13.png"></div>
+                    <div class="at9_img17"><img src="img4/history14.png"></div>
+                    <div class="at9_img18"><img src="img4/history19.png"></div>
+                    <div class="at9_img19"><img src="img4/history19.png"></div>
+                    <div class="at9_img20"><img src="img4/history18.png"></div>
+                    <div class="at9_img21"><img src="img4/history19.png"></div>
+                    <div class="at9_text at9_text10">
+                        <p class="at9_color_y">2000</p>
+                        <p>메뉴의 다양화!<br>빵과 소스 선택 가능</p>
+                    </div>
+                    <div class="at9_text at9_text11">
+                        <p class="at9_color_y">2005</p>
+                        <p>토스트 샌드위치의<br>시작</p>
+                    </div>
+                    <div class="at9_text at9_text12">
+                        <p class="at9_color_y">2013</p>
+                        <p>빵의 인공 첨가물 제거</p>
+                    </div>
+                    <div class="at9_text at9_text13">
+                        <p class="at9_color_y">2017</p>
+                        <p>‘Fresh Forward’를 통한<br>새로운 변화</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="at9_bm4">
+                <div>
+                    <div class="at9_img22"><img src="img4/history15.png"></div>
+                    <div class="at9_img23"><img src="img4/history16.png"></div>
+                    <div class="at9_img25"><img src="img4/history19.png"></div>
+                    <div class="at9_img26"><img src="img4/history18.png"></div>
+                    <div class="at9_img27"><img src="img4/history19.png"></div>
+                    <div class="at9_img28"><img src="img4/history18.png"></div>
+                    <div class="at9_img29"><img src="img4/history18.png"></div>
+                    <div class="at9_img30"><img src="img4/history18.png"></div>
+                    <div class="at9_img31"><img src="img4/history18.png"></div>
+                    <div class="at9_img32"><img src="img4/history19.png"></div>
+                    <div class="at9_img33"><img src="img4/history18.png"></div>
+                    <div class="at9_text at9_text14">
+                        <p class="at9_color_y">May 1991</p>
+                        <p>써브웨이 한국 1호점 개점<br>(63빌딩 아케이드)</p>
+                    </div>
+                    <div class="at9_text at9_text15">
+                        <p class="at9_color_y">2005</p>
+                        <p>한국 지사 설립</p>
+                    </div>
+                    <div class="at9_text at9_text16">
+                        <p class="at9_color_y">2013</p>
+                        <p>페이스북, PPL 등을 통한<br>활발한 마케팅 활동 시작</p>
+                    </div>
+                    <div class="at9_text at9_text17">
+                        <p class="at9_color_y">2012</p>
+                        <p>50개 매장 달성</p>
+                    </div>
+                    <div class="at9_text at9_text18">
+                        <p class="at9_color_y">2014</p>
+                        <p>100개 매장 달성</p>
+                    </div>
+                    <div class="at9_text at9_text19">
+                        <p class="at9_color_y">2014</p>
+                        <p>300개 매장 달성</p>
+                    </div>
+                    <div class="at9_text at9_text20">
+                        <p class="at9_color_y">2018</p>
+                        <p>2018 한국 웹사이트 리뉴얼 오픈</p>
+                    </div>
+                    <div class="at9_text at9_text21">
+                        <p class="at9_color_y">2017</p>
+                        <p>아시아 최초 ‘Fresh Forward’<br>매장 국내 오픈</p>
+                    </div>
+                    <div class="at9_text at9_text22">
+                        <p class="at9_color_y">2020</p>
+                        <p>써브웨이 앱 출시 , 국내 첫 Drive Through 매장 오픈</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="at at10" id="ati10">
+            <div class="at10_bigimg">
+                <div>
+                    <p>SEARCH FOR BETTER</p>
+                    <p>우리는 더 좋은 써브웨이를 위해 매일 노력합니다.</p>
+                </div>
+                <div class="at10_submenu1">
+                    <ul>
+                        <li id="at10_bt1_1">
+                            <p>써브웨이 역사</p>
+                            <p>ㅣ</p>
+                        </li>
+                        <li id="at10_bt1_2">
+                            <p>써브웨이 약속</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="at10_bm">
+                <ul>
+                    <div>
+                        <div class="at10_img1"><img src="img4/promise1.jpg"></div>
+                        <div class="at10_text">
+                            <ul>
+                                <li>
+                                    <div></div>
+                                    <p>01</p>
+                                </li>
+                                <li>
+                                    <p>엄격하게 관리되는 우리의 재료</p>
+                                </li>
+                            </ul>
+                            <div class="at10_ss">
+                                <p>매일 매장에 배송되는 신선한 야채들은 각 매장에서 정성스럽게 손질됩니다.</p>
+                                <p>엄격한 규율에 따라 세척 과정을 거친 야채들은</p>
+                                <p>당일 판매되는 양만큼 준비되며 언제나 신선한 최상의 야채를</p>
+                                <p>안전하게 제공하는 것이 써브웨이의 목표입니다.</p>
+                            </div>
+                            <div>
+                                <p>Our Veggies</p>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+                <ul>
+                    <div>
+                        <div class="at10_text">
+                            <ul>
+                                <li>
+                                    <div></div>
+                                    <p>02</p>
+                                </li>
+                                <li>
+                                    <p>써브웨이만의 특별한 빵</p>
+                                </li>
+                            </ul>
+                            <div class="at10_ss">
+                                <p>1983년부터 써브웨이는</p>
+                                <p>각 매장에서 매일 직접 구워 낸 신선한 샌드위치 빵을 제공합니다.</p>
+                                <p>신선한 샌드위치는 신선한 빵에서 시작된다는 철학으로</p>
+                                <p>매일 최상의 샌드위치 빵을 제공하기 위해 노력하고 있습니다.</p>
+                            </div>
+                            <div>
+                                <p>Our Bread</p>
+                            </div>
+                        </div>
+                        <div class="at10_img2"><img src="img4/promise2.jpg"></div>
+                    </div>
+                </ul>
+                <ul>
+                    <div>
+                        <div class="at10_img3"><img src="img4/promise3.jpg"></div>
+                        <div class="at10_text">
+                            <ul>
+                                <li>
+                                    <div></div>
+                                    <p>03</p>
+                                </li>
+                                <li>
+                                    <p>환경을 위한 우리의 노력</p>
+                                </li>
+                            </ul>
+                            <div class="at10_ss">
+                                <p>써브웨이의 샐러드 보울은 95% 재생 용기로 만들어졌으며,</p>
+                                <p>매장 내 일회용품 사용을 줄여 나가고 있습니다.</p>
+                                <p>써브웨이는 작은 부분이라도 놓치지 않고</p>
+                                <p>환경을 늘 생각하는 브랜드가 되기 위해 지속적으로 노력하고 있습니다.</p>
+                            </div>
+                            <div>
+                                <p>Our Impact</p>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+                <ul>
+                    <div>
+                        <div class="at10_text">
+                            <ul>
+                                <li>
+                                    <div></div>
+                                    <p>04</p>
+                                </li>
+                                <li>
+                                    <p>신선함을 위한 우리의 노력</p>
+                                </li>
+                            </ul>
+                            <div class="at10_ss">
+                                <p>써브웨이 빵은 인위적 당분이 함유되어 있지 않으며</p>
+                                <p>비타민과 칼슘을 강화하고 나트륨을 줄이는 등</p>
+                                <p>건강한 먹거리를 제공하기 위해 노력하고 있습니다.</p>
+                            </div>
+                            <div>
+                                <p>Our Fresh</p>
+                            </div>
+                        </div>
+                        <div class="at10_img4"><img src="img4/promise4.jpg"></div>
+                    </div>
+                </ul>
+            </div>
+        </article>
+
+        <article class="at at11" id="ati11">
+            <div>
+                <ul>
+                    <li>
+                        <p>LOGIN</p>
+                        <p>써브웨이 회원으로 로그인하시면 제공하는</p>
+                        <p>다양한 서비스를 이용할 수 있습니다.</p>
+                    </li>
+                    <li>
+                        <p>아이디</p>
+                        <p>비밀번호</p>
+                        <div>
+                            <input type="text" class="at11_id" placeholder="이메일 아이디 입력">
+                            <input type="text" class="at11_pw" placeholder="비밀번호 입력">
+                        </div>
+                        <div>
+                            <input type="checkbox" class="at11_checkBox">
+                            <p>이메일 아이디 저장</p>
+                        </div>
+                    </li>
+                    <li>로그인</li>
+                    <li>
+                        <p>아이디 찾기</p>
+                        <p>ㅣ</p>
+                        <p>비밀번호 찾기</p>
+                        <p>ㅣ</p>
+                        <p class="at11_btn">회원가입</p>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="at at12" id="ati12">
+            <div>
+                <div>
+                    <p>회원가입</p>
+                    <ul>
+                        <li class="at12_icon at12_icon1"><i class="fas fa-stamp"></i></li>
+                        <li class="at12_icon at12_icon2">----</li>
+                        <li class="at12_icon at12_icon3"><i class="fas fa-user"></i></li>
+                        <li class="at12_icon at12_icon4">----</li>
+                        <li class="at12_icon at12_icon5"><i class="fas fa-check"></i></li>
+                    </ul>
+                </div>
+
+                <div class="at12_bm">
+                    <p class="at12_title at12_title1">Step1. 약관동의</p>
+                    <p class="at12_title at12_title2">Step2. 가입정보 입력</p>
+                    <p class="at12_title at12_title3">Step3. 회원가입 완료</p>
+                    <div class="at12_bm_1">
+                        <ul>
+                            <li><input type="checkbox"></li>
+                            <li>(필수)</li>
+                            <li>홈페이지 이용약관 동의</li>
+                        </ul>
+                        <div class="at12_text">
+                            <p>마지막 수정일: 2020년 5월 7일</p><br>
+                            <p>이 이용약관은 이용자(“이용자”)와 SUBWAY SYSTEMS SINGAPORE PTE LTD 한국사무소(“SSSPL”)(명시적으로 SUBWAY IP LLC, FRANCHISE WORLD HEADQUARTERS, LLC, DOCTOR’S ASSOCIATES LLC, SUBWAY INTERNATIONAL, B.V., SUBWAY FRANCHISEE ADVERTISING FUND TRUST B.V. 등 그 자회사 및 계열사 포함, “THE SUBWAY GROUP”, 이하 “회사”)가 제공하는 서비스를 이용자가 이용함에 있어 필요한 이용 조건, 절차 및 당사자 간의 권리, 의무 등 기본적인 사항을 규정하는 것을 목적으로 하는 계약(이하 “합의서”)을 형성합니다. 이 합의서는 이용자가 www.subway.co.kr 웹사이트와 SSSPL이 운영하거나 위탁한 모든 웹사이트(이하 “웹사이트”)를 사용하거나, 써브웨이 모바일 앱("Subway® 앱")을 다운로드 및 사용함으로써 그 효력이 발생합니다. (이하 "웹사이트"와 "Subway® 앱"을 통칭하여 “사이트”라고 합니다.)<br>
+                                본 합의서는 서비스를 이용하고자 하는 모든 이용자에게 그 효력이 발생하며 회원 가입 시 사이트 내에서 본 합의서에 동의 또는 주문하기 버튼을 클릭함으로써 모든 조항에 동의하는 것으로 간주합니다.<br>
+                                이용자의 개인정보 보호 및 보안, 개인정보에 대한 수집, 이용 및 저장과 관련한 관행 및 정책에 대하여는 회사의 개인정보 처리방침에 의거합니다. [개인정보 처리방침]은 홈페이지에 별도 게시하고 있습니다.</p><br>
+                            <p>1. 회원 가입 및 카드 사용<br><br>
+                                1.1 회원 가입 및 Subcard® 프로그램<br>
+                                이용자가 써브웨이 사이트에서 회원가입을 하게 되면 Subcard® 프로그램에 자동으로 등록됩니다. Subcard® 프로그램은 멤버십 프로그램으로 웹사이트 또는 Subway® 앱을 통해 Subway® 제품을 구매하거나, Subway® 앱이 사용 가능한 레스토랑에서 써브웨이 제품을 구매하고 이용자의 회원 QR코드를 제시한 경우 포인트를 적립할 수 있는 멤버십 프로그램입니다. (단, 써브카드 잔액 충전, 써브카드 또는 Subway® e-Gift 구매 시에는 포인트 적립이 되지 않습니다.) 적립된 포인트는 Subway® 앱 사용이 가능한 레스토랑에서 사용할 수 있습니다. Subcard® 프로그램의 구체적인 내용은 써브카드 이용약관에 따릅니다. 회원 가입은 무료이며, 회원ID(회원번호)와 비밀번호(Password)에 관한 모든 관리 책임은 다 회원에게 있습니다. 다만, 14세 미만자는 회원으로 가입할 수 없습니다.<br>
+                                1.2 정확한 정보<br>
+                                이용자는 사이트를 이용하는 동안 Subcard® 이용약관에 따른 의무 외에도, 정확하고 완전한 정보를 제공하고, 제공한 정보를 최신으로 유지할 의무가 있습니다.<br>
+                                1.3 써브카드 및 e-Gift<br>
+                                Subcard® 프로그램은 International Purchasing Company Asia Pacific에 의해 별도로 운영됩니다. 써브카드 사용은 별도 이용약관의 적용을 받으며 www.subway.co.kr에서 확인 가능합니다.</p>
+                            <p>2. FAST-SUB<br><br>
+                                2.1 일반 정보<br>
+                                사이트에서는 신용 카드 및 직불 카드로 결제할 수 있습니다. 써브웨이 사이트에서는 써브카드, e-Gift, 한국에서 발행된 대부분의 카드(신용, 직불, 선불카드), 페이코, 카카오페이 및 기타 결제 방법을 사용할 수 있지만, 일부 결제 카드는 사용하지 못할 수 있습니다. 사이트를 통한 모든 거래는 이용자와 써브웨이 앱 사용이 가능한 레스토랑 간에 이루어지며, 이용자와 회사 간의 거래가 아닙니다. 상품 및 거래에 대한 정확한 정보나 문의 사항은 이용자가 해당 레스토랑에 확인하여야 하며, 카드 결제 관련 문제 발생 시에는 각 카드사에 문의해야 합니다.<br><br>
+                                2.2 주문하기<br>
+                                사이트에 나와 있는 모든 제품 및 서비스의 이용 가능 여부는 Subway® 레스토랑에 따라 상이할 수 있습니다. 총 배달 소요 시간은 사이트에서 주문 시 확인 가능합니다.<br>
+                                2.3 주문의 변경<br>
+                                이용자의 주문을 Subway® 레스토랑에서 수락한 이후에는 주문을 변경할 수 없으며, 이용자는 해당 주문에 대한 주문 금액을 지불할 책임이 있습니다. 이용자가 주문 레스토랑을 선택하고 주문한 이후에 해당 써브웨이 레스토랑에서 이용자의 주문을 수락해야 주문이 접수됩니다. 주문 후 5분 이내에 레스토랑에서 주문을 수락하지 않으면 해당 주문은 자동 취소되며 이에 대한 주문 금액은 청구되지 않습니다. 레스토랑에서 주문을 수락하지 않아 주문이 취소된 경우 Subway® 앱의 주문 상태가 변경되며, 푸시 알림 수신에 동의한 경우에는 푸시 알림을 통해서도 안내됩니다. 이용자는 재주문을 시도하거나 다른 써브웨이 레스토랑에 새로 주문할 수 있습니다.<br>
+                                2.4 주문의 취소<br>
+                                이용자가 사이트에서 주문하고, Subway® 레스토랑에서 수락한 이후에는 주문을 취소할 수 없으며, 이용자는 해당 주문에 대한 주문 금액을 지불할 책임이 있습니다. 관련 문의는 이용자가 해당 Subway® 레스토랑에 직접 문의해야 합니다.<br>
+                                2.5 분쟁 및 환불<br>
+                                주문 금액 청구에 오류가 있는 경우 고객 센터(02-797-5036)로 문의해 주십시오Subway® 레스토랑에서 받은 제품이나 서비스가 만족스럽지 않을 경우 해당 Subway® 레스토랑에 직접 문의해 주십시오.</p>
+                            <p>2.6 써브카드 사용 내역<br>
+                                써브카드를 사용하여 결제 거래가 이루어진 경우 회사는 이용자의 써브카드 사용 내역을 업데이트하고 전자 영수증을 제공하며 해당 내용은 이용자의 써브카드 계정을 통해 확인할 수 있습니다. 법률에 규정된 경우를 제외하고, (a) 써브카드 및 Subway® 앱과 관련된 모든 거래의 영구 기록 및 기타 데이터를 편집 및 보관하고 (b) 써브카드와 관련된 모든 거래 정보를 조정할 책임은 전적으로 이용자에게 있습니다. 이용자의 써브카드와 관련된 오류나 무단 거래 활동이 있다고 생각되는 경우, 이용자는 고객 센터(02-797-5036)에 즉시 연락해야 합니다.<br>
+                                2.7 가격 및 결제<br>
+                                각 Subway® 레스토랑은 독립적으로 소유 및 운영되므로 레스토랑마다 가격이 다를 수 있습니다. 이용자가 지불하는 가격은 주문을 진행하는 과정에서 명확하게 표시되며 주문 완료 시 최종 금액이 표시됩니다. 이용자가 특정 레스토랑의 주문을 온라인으로 지불하는 금액은 권장소비자가격과 다를 수 있습니다. 가격 및 이용 가능 정보는 사전 고지 없이 변경될 수 있습니다.<br>
+                                2.8 추가 서비스<br>
+                                사이트에서는 FAST-SUB 및 결제 처리 기능 외에도 써브웨이 레스토랑 찾기 서비스와 영양 정보를 제공할 뿐만 아니라 써브카드를 충전하거나 e-Gift를 구매하고 포인트도 사용할 수 있습니다.<br>
+                                2.9 단체메뉴<br>
+                                이용자는 사이트에서 Subway® 레스토랑을 선택한 후 “단체메뉴” 버튼을 클릭하여 사이트를 통해 단체메뉴를 주문할 수 있습니다. “단체메뉴”를 클릭하면 선택한 레스토랑으로 직접 전화가 연결되어 해당 Subway® 레스토랑에서 제공하는 단체메뉴를 직접 주문할 수 있습니다.</p>
+                        </div>
+                        <ul>
+                            <li><input type="checkbox"></li>
+                            <li>(필수)</li>
+                            <li>개인정보 수집 및 이용동의</li>
+                        </ul>
+                        <div class="at12_text">
+                            <p>회사는 이용자의 개인정보를 중요시합니다. 이 문서는 회사가 이용자의 개인정보를 수집, 사용, 공개, 전송 및 저장하는 방법을 설명한 개인정보 처리방침입니다. 이 문서에는 개인정보에 관한 이용자의 권리에 대해서도 명시되어 있습니다. Subway Systems Singapore Pte. Ltd. 한국사무소(“SSSPL”)(명시적으로 Subway IP, LLC, Franchise World Headquarters, LLC, Doctor’s Associates, LLC, Subway International, B.V., Subway Franchisee Advertising Fund Trust B.V. 등 그 자회사 및 계열사 포함, 이하 “The Subway Group”, “회사”)는 이용자의 개인정보를 존중하고 개인정보 보호법을 준수합니다.<br>
+                                The Subway Group은 이용자의 개인정보를 수집, 보호 및 사용하는 방법의 목적, 그리고 이용자의 개인정보를 보호하기 위한 조치에 대해 이용자에게 고지합니다.<br>
+                                이 개인정보 처리방침은 이용자가 온라인에서 Subway® 브랜드를 이용할 때 회사가 수집하는 개인정보에 적용됩니다. 이러한 정보에는 이용자가 제품을 구매하거나, 회사 소식 및 할인 메시지를 구독하거나, 프로모션에 참여하거나, 고객 센터에 문의할 때뿐만 아니라, 회사 웹사이트, 모바일 앱, 그리고 회사에서 직접 운영하는 마케팅 캠페인이나 다른 커뮤니케이션을 통해 수집된 정보가 포함됩니다(통칭하여 “써브웨이 서비스”).<br>
+                                회사가 개인정보 처리방침을 수정하면 웹사이트 공지(또는 개별 통지)를 통해 발표됩니다.
+                            </p><br>
+                            <p>• 이 정책은 2020년 7월 1일부터 유효합니다.<br><br>
+                                The Subway Group.<br>
+                                The Subway Group(“회사”)은 SSSPL, Subway IP LLC(전 세계 써브웨이® 레스토랑의 개발을 위한 독자적인 레스토랑 설립 및 운영 시스템 소유), Franchise World Headquarters, LLC(다른 The Subway Group 법인에 핵심 비즈니스 관련 서비스를 제공하는 서비스 전문 기업), Subway® 가맹 본부(전 세계에서 프랜차이즈 제안 및 판매) 및 Subway® 광고 법인(전 세계의 써브웨이® 레스토랑 및 Subway® 가맹점을 위해 전국 및 지역 광고 자금 및 활동을 관리함)을 포함하나 이에 국한되지 않는 다양한 회사로 구성되어 있습니다.<br>
+                                써브카드코리아 주식회사.<br>
+                                써브카드코리아 주식회사는 한국에서 Subcard® 프로그램(써브카드)을 운영합니다. 써브카드코리아 주식회사는 Independent Purchasing Company (Australasia) Ltd(IPC Asia Pacific)의 자회사입니다. IPC Asia Pacific은 독립적인 Subway® 프랜차이즈 가맹점 소유 및 운영 구매 회사입니다. 회사는 써브카드코리아 주식회사와 협력하여 써브웨이 서비스를 제공하지만, 써브카드코리아 주식회사 및 IPC Asia Pacific은 The Subway Group과 별개인 독립적인 회사입니다. Subcard® 프로그램의 써브카드코리아 주식회사 개인정보 처리방침은 여기에서 확인할 수 있습니다.
+                            </p><br>
+                            <p>회사가 수집하는 개인정보는 이용자가 회사에 직접 제공하는 정보입니다. 회사는 이용자가 회사 웹사이트를 사용하거나, FAST-SUB로 주문하거나, 써브카드 고객 계정의 등록 시 제품의 구입과 회사 서비스의 사용 목적으로 특정 개인정보의 제공을 요청할 수 있습니다. 회사가 이용자로부터 수집하는 개인정보는 이용자가 이용하는 써브웨이 서비스에 따라 다르지만, 다음 정보를 포함할 수 있습니다.<br>
+                                • 연락처 정보. 회사는 이용자의 이름, 성, 우편 주소, 전화번호, 이메일 주소, 생년월일, 성별 및 기타 유사한 데이터를 포함하는 개인 및/또는 사업체 연락처 정보를 수집할 수 있습니다.<br>
+                                • 결제 정보. 이용자가 온라인에서 구매하는 경우 선택하는 결제 방법에 따라 신용/직불 카드 번호 및 관련 금융 정보(예: 유효 기간, 보안 코드 및 청구 주소) 또는 다른 결제 방법(예: 써브카드)을 결제 처리업체에 제공해야 합니다. 이용자는 결제 처리업체인 Fiserv에 직접 결제 정보를 제공합니다. 이용자는 Fiserv의 개인정보 처리방침을 여기에서 확인할 수 있습니다.<br>
+                                • 계정 정보. 이용자가 계정을 만들거나, 회사의 온라인 서비스에 액세스하거나, 제품을 구매할 때 회사는 이용자의 사용자 이름 및 비밀번호 등의 정보를 수집합니다. 계정 정보에는 이용자의 써브웨이 서비스를 구매한 방식 또는 서비스에 가입한 방법과 이용자의 거래 내역, 언어 기본 설정, 자주 가는 써브웨이® 레스토랑, 사용한 써브웨이 서비스의 청구 및 지원 내역 및 이용자의 계정과 관련된 그 외 다른 정보가 포함될 수도 있습니다.<br>
+                                • 사용 데이터. 사용 데이터는 로그인 날짜 및 시간에 관한 정보를 포함하여 이용자가 써브웨이 서비스를 사용할 때 수집하는 개인정보입니다.<br>
+                                • 마케팅 및 커뮤니케이션. 회사는 이용자의 기본 설정을 수집하여 회사 및 제3자(계약업체)의 마케팅 메시지 전송에 사용할 수 있습니다.<br>
+                                • 보안 자격증명. 회사는 인증 및 이용자의 Subway® 계정 접근에 필요한 이용자 ID, 비밀번호, 이메일 및 기타 유사한 보안 정보를 수집합니다<br>
+                                • 고객 서비스, 설문 조사 및 프로모션. 이용자가 온라인, 전화 또는 메일로 회사 고객 지원 채널을 이용하는 경우, 이용자가 회사 고객 설문 조사 또는 프로모션에 참여하는 경우 또는 써브웨이 서비스의 원활한 제공을 위한 경우나 이용자의 질문에 답변하기 위해 이용자가 회사에 추가 개인정보를 제공하는 경우가 있을 수 있습니다.<br>
+                                • 이용자가 제3자에 관해 제공하는 정보. 이용자는 회사가 e-Gift와 같은 제품 또는 서비스를 타인에게 추천하거나 전송하도록 타인의 정보(예: 이름, 이메일, 주소 또는 전화번호)를 회사에 제공할 수 있습니다. 이와 같은 경우 현지 법률에 The Subway Group에 타인의 정보를 제공하려면 해당 제3자의 동의를 얻도록 규정되어 있을 수 있습니다. 회사는 이 개인정보 처리방침에 따라 이용자가 제공하는 정보를 이용할 수 있습니다.<br>
+                                • 이용자가 개인정보를 제공하지 않는 경우. 법률 또는 회사가 이용자와 체결한 계약의 약관에 따라 이용자의 개인정보를 수집해야 할 때 이용자가 해당 정보를 제공하지 않는 경우, 회사는 이용자와 이미 체결했거나, 체결하려고 시도하는 계약(예: 이용자에게 제품 또는 서비스를 제공하기 위한 목적)을 이행하지 못할 수 있습니다. 이 경우 회사는 계약을 취소하고 그에 따라 이용자에게 고지해야 하는 내용이 있을 수 있습니다.<br>
+                            </p>
+                        </div>
+                        <ul>
+                            <li><input type="checkbox"></li>
+                            <li>(필수)</li>
+                            <li>한국 써브카드® – 프로그램 이용 동의</li>
+                        </ul>
+                        <div class="at12_text">
+                            <p>Subcard® 한국의 멤버십과 써브카드 프로그램(이하 Subcard® 프로그램)은 Subcard Korea Co., Ltd (사업자등록번호: 387-88-01340)(이하 "회사")에서 운영 및 발급합니다. 본 이용약관(약관)은 이용자가www.subway.co.kr(이하 “웹사이트”) 또는 Subway® 모바일 애플리케이션(이하 "Subway® 앱")을 사용하거나 써브카드 또는 e-Gift를 구입, 등록 또는 사용함으로써 그 효력이 발생합니다.</p><br>
+                            <p>본 약관은 서비스를 이용하고자 하는 모든 이용자에게 그 효력이 발생하며, 회원 가입 시 웹사이트 또는 Subway® 앱(이하 통칭 "사이트") 내에서 본 이용 약관에 동의하거나 주문하기 버튼을 클릭하면 모든 조항에 동의하는 것으로 간주합니다.</p><br>
+                            <p>약관에 동의하지 않는 경우 Subcard® 프로그램을 사용할 수 없으며,<br>만 14세 미만은 회원으로 가입할 수 없습니다. Subcard® 프로그램에 관한 기타 문의 사항은 회사(subcardsk@ipca.biz)에 문의해 주십시오.</p><br>
+                            <p>Subcard®</p><br>
+                            <p>써브카드란 회사에서 제공하는 서비스를 정상적으로 이용할 수 있도록 회사가 승인한 실물 또는 모바일 카드로, 회사가 발급합니다. 써브카드는 잔액을 충전하여 선불전자지급수단으로 사용하거나, 포인트를 모으는 적립 카드로 사용할 수 있습니다.<br>
+                                써브카드는 양도할 수 없으며, 대한민국의 Subcard® 프로그램에 참여하는 Subway® 앱 사용이 가능한 레스토랑, 웹사이트 및 Subway® 앱에서만 사용할 수 있습니다.<br>
+                                써브카드는 신용 또는 청구 카드가 아니며, 별도의 카드 구매 가격이 없는 충전식 상품권입니다. 구매하거나 충전한 정상 카드의 잔액은 현금으로 반환되지 않습니다. 단, 구매 또는 최종 충전 후 그 시점의 잔액을 기준으로 60% 이상을 사용한 후 40% 이하에 해당하는 잔액의 반환을 요구하는 경우에는 환불 신청이 가능합니다. 또한, 잔액이 1만 원 미만인 경우에는 80%를 사용한 후 20% 이하에 해당하는 잔액만 환불 신청할 수 있습니다.<br>
+                                제3자 배달 플랫폼이나 앱을 통해 주문할 때에는 써브카드를 사용할 수 없습니다.실물 또는 모바일 써브카드를 복사 또는 복제하거나 작동을 방해해서는 안 됩니다.
+                            </p>
+                        </div>
+                        <div class="at12_exc">
+                            <div><img src="img/icon_exc.png" alt=""></div>
+                            <div>
+                                <p>만 14세 이상 고객만 가입이 가능합니다.</p>
+                                <p>써브웨이는 만 14세 미만 아동의 회원가입을 제한하고 있습니다.<br>
+                                    「정보통신망 이용촉진 및 정보보호 등에 관한 법률에는 만 14세 미만 아동의 개인정보 수집 시 법정대리인 동의를
+                                    받도록 규정하고<br>있으며, 만 14세 미만 아동의 법정대리인 동의없이 회원가입을 하는 경우 회원탈퇴 또는 서비스 이용이 제한될 수 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="at12_btn1">다음</div>
+                    </div>
+                    <div class="at12_bm_2">
+                        <div class="at12_textbox">
+                            <ul>
+                                <li>아이디</li>
+                                <li><input type="text" placeholder="이메일 아이디 입력"></li>
+                                <li>중복확인</li>
+                            </ul>
+                            <ul>
+                                <li>비밀번호</li>
+                                <li><input type="text" placeholder="8 ~ 15자의 영문/숫자 조합"></li>
+                                <li>비밀번호 확인</li>
+                                <li><input type="text" placeholder="비밀번호 재 입력"></li>
+                            </ul>
+                            <ul>
+                                <li>생년월일</li>
+                                <li><input type="text" placeholder="예) 19930629"></li>
+                            </ul>
+                            <ul>
+                                <li>핸드폰 번호</li>
+                                <li>
+                                    <input type="text">
+                                    <p>-</p>
+                                    <input type="text">
+                                    <p>-</p>
+                                    <input type="text">
+                                    <input type="checkbox">
+                                    <p>수신동의</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>이메일 주소</li>
+                                <li>
+                                    <input type="text" placeholder="sample123">
+                                    <p>@</p>
+                                    <select name="" id="">
+                                        <option>gmail.com</option>
+                                        <option>naver.com</option>
+                                        <option>hanmail.net</option>
+                                        <option>nate.com</option>
+                                    </select>
+                                    <input type="checkbox">
+                                    <p>수신동의</p>
+                                </li>
+                            </ul>
+                            <div class="at12_btn2">다음</div>
+                        </div>
+                    </div>
+
+                    <div class="at12_bm_3">
+                        <div>
+                            <p>축하합니다!</p>
+                            <p>회원가입이 완료되었습니다.</p>
+                        </div>
+                        <div class="at12_btn3">로그인 하기</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <div>
+            <ul class="footer1">
+                <li>이용약관</li>
+                <li>개인정보처리방침</li>
+            </ul>
+            <ul class="footer2">
+                <li>서울시 서초구 강남대로 535 프린스빌딩 15층 ㅣ 대표 : 콜린클락 ㅣ 전화 : 02-797-5036 ㅣ 사업자등록번호 : 101-84-04143</li>
+                <li>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</li>
+            </ul>
+            <ul class="footer3">
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
